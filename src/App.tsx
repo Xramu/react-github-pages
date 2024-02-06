@@ -1,15 +1,13 @@
-import React from 'react';
-import logo from './img/mahiro.png';
-import './App.css';
+import React from "react";
+import "./utils/App.css";
+
+import Navigation from "./navigation/Navigation";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} alt="logo" />
-        <p>
-          Nothing here yet...
-        </p>
+        <Navigation />
       </header>
     </div>
   );
