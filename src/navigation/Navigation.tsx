@@ -13,12 +13,14 @@ function Navigation() {
   return (
     <BrowserRouter>
       <NavigationBar />
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path={routes.Home} element={<Home />} />
-        <Route path={routes.Info} element={<Info />} />
-        <Route path="*" element={<NoPage />} />
-      </Routes>
+      <div className="Navigation-page">
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path={routes.Home} element={<Home />} />
+          <Route path={routes.Info} element={<Info />} />
+          <Route path="*" element={<NoPage />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 }

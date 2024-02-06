@@ -1,5 +1,4 @@
 import React from "react";
-import "../utils/App.css";
 
 import Socials from "../components/Socials";
 

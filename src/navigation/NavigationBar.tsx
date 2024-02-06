@@ -13,7 +13,7 @@ function NavigationBar() {
   }
 
   return (
-    <div>
+    <div className="Navigation-bar">
       <NavigationButton text="Home" onClick={() => {OnNavigationButtonClick(routes.Home)}} />
       <NavigationButton text="About Me" onClick={() => {OnNavigationButtonClick(routes.Info)}} />
     </div>
