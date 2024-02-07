@@ -45,9 +45,23 @@
 }
 
 .Navigation-bar {
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
   background-color: var(--primary-color);
+  border-bottom: solid 5px var(--secondary-color);
+  border-right: solid 5px var(--secondary-color);
+  border-left: solid 5px var(--secondary-color);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.Navigation-buttons {
+  display: flex;
 }
 
 .Navigation-button {
@@ -55,13 +69,19 @@
   background-color: #00000000;
   border: none;
   color: var(--primary-text-color);
-  padding: 15px 32px;
+  padding: 5px 30px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  display: inline-flex;
+  font-size: calc(10px + 2vmin);
 }
 
 .Socials-row {
   display: flex;
+  flex-direction: row;
+}
+
+.Socials-icon {
+  display: flex !important;
+  margin: 5px 5px;
 }

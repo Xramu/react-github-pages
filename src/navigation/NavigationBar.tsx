@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import NavigationButton from "./NavigationButton";
+import Socials from "../components/Socials";
 
 import routes from "../utils/Routes.json";
 
@@ -14,8 +15,11 @@ function NavigationBar() {
 
   return (
     <div className="Navigation-bar">
-      <NavigationButton text="Home" onClick={() => {OnNavigationButtonClick(routes.Home)}} />
-      <NavigationButton text="About Me" onClick={() => {OnNavigationButtonClick(routes.Info)}} />
+      <div className="Navigation-buttons">
+        <NavigationButton text="Home" onClick={() => {OnNavigationButtonClick(routes.Home)}} />
+        <NavigationButton text="About Me" onClick={() => {OnNavigationButtonClick(routes.Info)}} />
+      </div>
+      <Socials />
     </div>
   );
 }
