@@ -3,7 +3,50 @@ import React from "react";
 function ProjectsInfo() {
   return (
     <div>
-      <p>Info about my projects go here</p>
+      <h1>Unity Projects</h1>
+      <h2>Ramu's Gun Range</h2>
+      <p>
+        Ramu's Gun Range is an interactive VRChat shooting range experience with detailed
+        gunplay and functionality created with Unity and C#.
+      </p>
+      <h3>Details</h3>
+      <p>
+        This project is fully programmed by me using C# and VRChat's exposed
+        Unity API.
+        <br />
+        The experience has been visited over 450,000 times and is available for
+        anyone with VRChat installed.
+        <br />
+        The world can be found through{" "}
+        <a href="https://vrchat.com/home/launch?worldId=wrld_9870aa37-916c-4e90-ba71-b8703c8204b3">
+          This Link
+        </a> or through VRChat's in-game world search.
+      </p>
+      <h4>Code</h4>
+      <p>
+        I heavily use object-oriented programming (<a href="https://en.wikipedia.org/wiki/Object-oriented_programming">OOP</a>) for sharing
+        functionality between different guns and challenges.
+        <br />
+        Total length of the written code exceeds over 20,000 lines including
+        comments and summaries.
+      </p>
+      <h4>Environment</h4>
+      <p>
+        The environment and lighting is fully set up and made by me using
+        Unity's baked lighting, baked reflections and occlusion culling.
+        <br />
+        For modelling the environment and small furniture sets, I used Unity's
+        ProBuilder package.
+      </p>
+      <h4>Gun Models & Sounds</h4>
+      <p>
+        Almost all of the 3D gun models are bought from <a href="https://tomcattoybox.booth.pm/">Tomcat's Booth Store.</a><br />
+      </p>
+      <h2>First-Person and Third-Person Character Controller Demo</h2>
+
+      <h1>React Projects</h1>
+      <h2>Github Page</h2>
+      <h2>Yahtzee Scoreboard App</h2>
     </div>
   );
 }

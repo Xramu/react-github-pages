@@ -1,7 +1,5 @@
 import React from "react";
 
-import Socials from "../components/Socials";
-
 function HomeView() {
   return (
     <div>
