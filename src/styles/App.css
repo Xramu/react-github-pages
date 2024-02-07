@@ -47,18 +47,30 @@
   }
 }
 
-.Page-inline {
-  display: flex;
-  justify-content: space-around;
+.Tool-icon {
+  margin: 0.5vmin;
+  height: calc(10px + 6vmin);
 }
 
-.Navigation-page {
+/* Pages */
+
+.Page {
   font-size: calc(10px + 1vmin);
   display: flex;
   justify-content: center;
   text-align: left;
   margin: 0px 20px;
 }
+
+.Page-inline {
+  display: flex;
+}
+
+.Page-inline-list {
+  margin-right: 40px;
+}
+
+/* Navigation */
 
 .Navigation-bar {
   overflow: hidden;
@@ -85,6 +97,8 @@
   display: inline-flex;
   font-size: calc(10px + 2vmin);
 }
+
+/* Social */
 
 .Socials-row {
   display: flex;

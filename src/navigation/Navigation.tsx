@@ -13,7 +13,7 @@ function Navigation() {
   return (
     <BrowserRouter>
       <NavigationBar />
-      <div className="Navigation-page">
+      <div className="Page">
         <Routes>
           <Route index element={<Home />} />
           <Route path={routes.Home} element={<Home />} />
