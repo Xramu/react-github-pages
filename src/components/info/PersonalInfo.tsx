@@ -1,7 +1,6 @@
 import React from "react";
 
 import ToolIcon from "./ToolIcon";
-import PageBox from "../PageBox";
 
 function getLanguagesRow() {
   return (
