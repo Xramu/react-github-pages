@@ -1,6 +1,6 @@
 import React from "react";
 
-import ToolIcon from "./ToolIcon";
+import { ToolIcon } from "./ToolIcon";
 import HorizontalLine from "../HorizontalLine";
 
 function getLanguagesRow() {
@@ -164,7 +164,6 @@ function PersonalInfo() {
 
       {getLanguagesRow()}
       {getToolsRow()}
-
     </div>
   );
 }

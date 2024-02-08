@@ -29,4 +29,4 @@ function ToolIcon(props: { src?: string; alt?: string; link?: string }) {
   return icon;
 }
 
-export default ToolIcon;
+export { ToolIcon };
