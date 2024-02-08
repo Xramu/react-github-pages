@@ -1,6 +1,7 @@
 import React from "react";
 
 import ToolIcon from "./ToolIcon";
+import PageBox from "../PageBox";
 
 function getLanguagesRow() {
   return (
@@ -117,10 +118,12 @@ function PersonalInfo() {
         <br />I enjoy solving problems and learning something new from them!
       </p>
 
-      <h2>What I Am Familiar With</h2>
+      <p>
+        Learning new frameworks, languages, language features and tools gives me
+        satisfaction as I look back at all that I've learned.
+      </p>
 
-      {getLanguagesRow()}
-      {getToolsRow()}
+      <h2>What I Am Familiar With</h2>
 
       <div className="Page-inline">
         <div className="Page-inline-list">
@@ -157,10 +160,9 @@ function PersonalInfo() {
         </div>
       </div>
 
-      <p>
-        Learning new frameworks, languages, language features and tools gives me
-        satisfaction as I look back at all that I've learned.
-      </p>
+      {getLanguagesRow()}
+      {getToolsRow()}
+
     </div>
   );
 }
