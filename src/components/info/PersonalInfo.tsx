@@ -1,6 +1,7 @@
 import React from "react";
 
 import ToolIcon from "./ToolIcon";
+import HorizontalLine from "../HorizontalLine";
 
 function getLanguagesRow() {
   return (
@@ -90,7 +91,7 @@ function getToolsRow() {
       <ToolIcon
         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
         link="https://code.visualstudio.com/"
-        alt="Visual Studio Code"
+        alt="VS Code"
       />
       <ToolIcon
         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
@@ -158,6 +159,8 @@ function PersonalInfo() {
           </ul>
         </div>
       </div>
+
+      <HorizontalLine />
 
       {getLanguagesRow()}
       {getToolsRow()}

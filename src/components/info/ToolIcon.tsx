@@ -1,6 +1,6 @@
 import React from "react";
 
-function ToolIcon(props: { src: string; alt: string; link?: string }) {
+function ToolIcon(props: { src?: string; alt?: string; link?: string }) {
   // Cleate image
   let icon = <img className="Tool-icon" alt={props.alt} src={props.src} />;
 

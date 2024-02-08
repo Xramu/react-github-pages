@@ -48,7 +48,7 @@
 }
 
 .Tool-icon {
-  margin: 0.5vmin;
+  margin: 0.5vmin 1vmin;
   margin-bottom: 0px;
   height: calc(10px + 6vmin);
 }
@@ -67,7 +67,7 @@
 .Tool-icon-row {
   display: flex;
   align-content: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .Horizontal-line {
@@ -101,6 +101,21 @@
 /*.Page-inline-list {
   margin-right: 40px;
 }*/
+
+/* Projects */
+
+.Project-preview {
+  display: flex;
+  align-content: center;
+}
+
+.Project-preview-banner {
+  border: solid 4px;
+  border-radius: 4px;
+  display: block;
+  justify-content: center;
+  width: 40%;
+}
 
 /* Navigation */
 

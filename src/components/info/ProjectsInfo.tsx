@@ -1,33 +1,45 @@
 import React from "react";
 import HorizontalLine from "../HorizontalLine";
 
+import RamusRangeBanner from "../../img/ramus_range/RamusRangeBanner.jpg";
+
 function ProjectsInfo() {
   return (
     <div className="Page-section">
       <h1>Unity Projects</h1>
 
-      <h2><u>Ramu's Gun Range</u></h2>
+      <h2>
+        <u>Ramu's Gun Range</u>
+      </h2>
 
       <p>
         Ramu's Gun Range is an interactive VRChat shooting range experience with
         detailed gunplay and functionality created with Unity and C#.
       </p>
 
+      <div className="Project-preview">
+        <img
+          src={RamusRangeBanner}
+          alt="Banner of Ramu's Gun Range"
+          className="Project-preview-banner"
+        />
+      </div>
+
       <h3>Details</h3>
 
-      <p>
-        This project is fully programmed by me using C# and VRChat's exposed
-        Unity API.
-        <br />
-        The experience has been visited over 450,000 times and is available for
-        anyone who has access to VRChat.
-        <br />
-        The world can be found{" "}
-        <a href="https://vrchat.com/home/launch?worldId=wrld_9870aa37-916c-4e90-ba71-b8703c8204b3">
-          Here
-        </a>{" "}
-        or through VRChat's in-game world search.
-      </p>
+          <p>
+            This project is fully programmed by me using C# and VRChat's exposed
+            Unity API.
+            <br />
+            The experience has been visited over 450,000 times and is available
+            for anyone who has access to VRChat.
+            <br />
+            The world can be found{" "}
+            <a href="https://vrchat.com/home/launch?worldId=wrld_9870aa37-916c-4e90-ba71-b8703c8204b3">
+              Here
+            </a>{" "}
+            or through VRChat's in-game world search.
+          </p>
 
       <h4>Code</h4>
 
@@ -60,15 +72,21 @@ function ProjectsInfo() {
         <br />
       </p>
 
-      <h2><u>First-Person and Third-Person Character Controller Demo</u></h2>
+      <h2>
+        <u>First-Person and Third-Person Character Controller Demo</u>
+      </h2>
 
       <HorizontalLine />
 
       <h1>React Projects</h1>
 
-      <h2><u>Github Page</u></h2>
+      <h2>
+        <u>Github Page</u>
+      </h2>
 
-      <h2><u>Yahtzee Scoreboard App</u></h2>
+      <h2>
+        <u>Yahtzee Scoreboard App</u>
+      </h2>
     </div>
   );
 }

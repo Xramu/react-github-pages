@@ -1,0 +1,20 @@
+{
+  "csharp": { "image-src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg", "anchor-link": "https://learn.microsoft.com/en-us/dotnet/csharp/", "name": "C#" },
+  "cpp": { "image-src": "", "anchor-link": "", "name": "C++" },
+  "c": { "image-src": "", "anchor-link": "", "name": "C" },
+  "java": { "image-src": "", "anchor-link": "", "name": "Java" },
+  "kotlin": { "image-src": "", "anchor-link": "", "name": "Kotlin" },
+  "java-script": { "image-src": "", "anchor-link": "", "name": "JavaScript" },
+  "type-script": { "image-src": "", "anchor-link": "", "name": "TypeScript" },
+  "lua": { "image-src": "", "anchor-link": "", "name": "Lua" },
+  "html": { "image-src": "", "anchor-link": "", "name": "HTML" },
+  "css": { "image-src": "", "anchor-link": "", "name": "CSS" },
+  "unity": { "image-src": "", "anchor-link": "", "name": "Unity" },
+  "react": { "image-src": "", "anchor-link": "", "name": "React" },
+  "android-studio": { "image-src": "", "anchor-link": "", "name": "Android Studio" },
+  "roblox-studio": { "image-src": "", "anchor-link": "", "name": "Roblox Studio" },
+  "visual-studio": { "image-src": "", "anchor-link": "", "name": "Visual Studio" },
+  "vs-code": { "image-src": "", "anchor-link": "", "name": "VS Code" },
+  "nodejs": { "image-src": "", "anchor-link": "", "name": "Node.js" },
+  "git": { "image-src": "", "anchor-link": "", "name": "Git" }
+}
