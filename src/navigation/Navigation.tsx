@@ -15,9 +15,9 @@ function Navigation() {
       <NavigationBar />
       <div className="Page">
         <Routes>
-          <Route index element={<Home />} />
-          <Route path={routes.Home} element={<Home />} />
+          <Route index element={<Info />} />
           <Route path={routes.Info} element={<Info />} />
+          <Route path={routes.Home} element={<Home />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
       </div>
