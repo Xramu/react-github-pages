@@ -1,10 +1,10 @@
-import React from "react";
-import HorizontalLine from "../HorizontalLine";
+import React from "react"
+import HorizontalLine from "../HorizontalLine"
 
-import RamusRangeProjectInfo from "./projects/RamusRangeProjectInfo";
-import CharControllerProjectInfo from "./projects/CharControllerProjectInfo";
-import GithubPageProjectInfo from "./projects/GithubPageProjectInfo";
-import YahtzeeAppProjectInfo from "./projects/YahtzeeAppProjectInfo";
+import RamusRangeProjectInfo from "./projects/RamusRangeProjectInfo"
+import CharControllerProjectInfo from "./projects/CharControllerProjectInfo"
+import GithubPageProjectInfo from "./projects/GithubPageProjectInfo"
+import YahtzeeAppProjectInfo from "./projects/YahtzeeAppProjectInfo"
 
 function ProjectsInfo() {
   return (
@@ -33,7 +33,7 @@ function ProjectsInfo() {
 
       <HorizontalLine />
     </div>
-  );
+  )
 }
 
-export default ProjectsInfo;
+export default ProjectsInfo

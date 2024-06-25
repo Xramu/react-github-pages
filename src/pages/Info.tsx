@@ -1,8 +1,8 @@
-import React from "react";
+import React from "react"
 
-import PersonalInfo from "../components/info/PersonalInfo";
-import ProjectsInfo from "../components/info/ProjectsInfo";
-import HorizontalLine from "../components/HorizontalLine";
+import PersonalInfo from "../components/info/PersonalInfo"
+import ProjectsInfo from "../components/info/ProjectsInfo"
+import HorizontalLine from "../components/HorizontalLine"
 
 function InfoView() {
   return (
@@ -11,7 +11,7 @@ function InfoView() {
       <HorizontalLine />
       <ProjectsInfo />
     </div>
-  );
+  )
 }
 
-export default InfoView;
+export default InfoView

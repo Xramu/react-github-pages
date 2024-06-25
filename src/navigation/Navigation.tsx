@@ -1,13 +1,13 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React from "react"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
-import routes from "../utils/Routes.json";
+import routes from "../utils/Routes.json"
 
-import NavigationBar from "./NavigationBar";
+import NavigationBar from "./NavigationBar"
 
-import Home from "../pages/Home";
-import Info from "../pages/Info";
-import NoPage from "../pages/NoPage";
+import Home from "../pages/Home"
+import Info from "../pages/Info"
+import NoPage from "../pages/NoPage"
 
 function Navigation() {
   return (
@@ -22,7 +22,7 @@ function Navigation() {
         </Routes>
       </div>
     </BrowserRouter>
-  );
+  )
 }
 
-export default Navigation;
+export default Navigation

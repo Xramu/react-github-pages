@@ -1,6 +1,7 @@
-import React from 'react'
+import React from "react"
 
-import RamusRangeBanner from "../../../img/ramus_range/RamusRangeBanner.jpg";
+import RamusRangeBanner from "../../../img/ramus_range/RamusRangeBanner.jpg"
+import ProjectInfoDropdownBox from "../ProjectInfoDropdownBox"
 
 function RamusRangeProjectInfo() {
   return (
@@ -22,8 +23,8 @@ function RamusRangeProjectInfo() {
         />
       </div>
 
-      <h3>Details</h3>
-
+      <ProjectInfoDropdownBox title="Details">
+        <div>
           <p>
             This project is fully programmed by me using C# and VRChat's exposed
             Unity API.
@@ -38,36 +39,38 @@ function RamusRangeProjectInfo() {
             or through VRChat's in-game world search.
           </p>
 
-      <h4>Code</h4>
+          <ProjectInfoDropdownBox title="Code">
+            <p>
+              I heavily use object-oriented programming (
+              <a href="https://en.wikipedia.org/wiki/Object-oriented_programming">
+                OOP
+              </a>
+              ) for sharing functionality between different guns and challenges.
+              <br />
+              Total length of the written code exceeds over 20,000 lines
+              including comments and summaries.
+            </p>
+          </ProjectInfoDropdownBox>
 
-      <p>
-        I heavily use object-oriented programming (
-        <a href="https://en.wikipedia.org/wiki/Object-oriented_programming">
-          OOP
-        </a>
-        ) for sharing functionality between different guns and challenges.
-        <br />
-        Total length of the written code exceeds over 20,000 lines including
-        comments and summaries.
-      </p>
+          <ProjectInfoDropdownBox title="Environment">
+            <p>
+              The environment and lighting is fully set up and made by me using
+              Unity's baked lighting, baked reflections and occlusion culling.
+              <br />
+              For modelling the environment and small furniture sets, I used
+              Unity's ProBuilder package.
+            </p>
+          </ProjectInfoDropdownBox>
 
-      <h4>Environment</h4>
-
-      <p>
-        The environment and lighting is fully set up and made by me using
-        Unity's baked lighting, baked reflections and occlusion culling.
-        <br />
-        For modelling the environment and small furniture sets, I used Unity's
-        ProBuilder package.
-      </p>
-
-      <h4>Gun Models & Sounds</h4>
-
-      <p>
-        Almost all of the 3D gun models are bought from{" "}
-        <a href="https://tomcattoybox.booth.pm/">Tomcat's Booth Store.</a>
-        <br />
-      </p>
+          <ProjectInfoDropdownBox title="Gun Models & Sounds">
+            <p>
+              Almost all of the 3D gun models are bought from{" "}
+              <a href="https://tomcattoybox.booth.pm/">Tomcat's Booth Store.</a>
+              <br />
+            </p>
+          </ProjectInfoDropdownBox>
+        </div>
+      </ProjectInfoDropdownBox>
     </div>
   )
 }

@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"
 
-import logo from "../img/mahiro.png";
+import logo from "../img/mahiro.png"
 
 function NoPage() {
   return (
@@ -8,7 +8,7 @@ function NoPage() {
       <img src={logo} alt="logo" />
       <p>404 No Page Here...</p>
     </div>
-  );
+  )
 }
 
-export default NoPage;
+export default NoPage

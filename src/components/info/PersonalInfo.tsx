@@ -1,7 +1,7 @@
-import React from "react";
+import React from "react"
 
-import { ToolIcon } from "./ToolIcon";
-import HorizontalLine from "../HorizontalLine";
+import { ToolIcon } from "./ToolIcon"
+import HorizontalLine from "../HorizontalLine"
 
 function getLanguagesRow() {
   return (
@@ -57,7 +57,7 @@ function getLanguagesRow() {
         alt="CSS"
       />
     </div>
-  );
+  )
 }
 
 function getToolsRow() {
@@ -104,7 +104,7 @@ function getToolsRow() {
         alt="Git"
       />
     </div>
-  );
+  )
 }
 
 function PersonalInfo() {
@@ -165,7 +165,7 @@ function PersonalInfo() {
       {getLanguagesRow()}
       {getToolsRow()}
     </div>
-  );
+  )
 }
 
-export default PersonalInfo;
+export default PersonalInfo
