@@ -1,12 +1,14 @@
 import React, { useState } from "react"
 
+type ProjectInfoDropdownBoxProps = {
+  title: string
+  children: JSX.Element
+}
+
 function ProjectInfoDropdownBox({
   title,
   children,
-}: {
-  title: string
-  children: JSX.Element
-}) {
+}: ProjectInfoDropdownBoxProps) {
   const [isShowingInfo, setIsShowingInfo] = useState(false)
 
   function OnInfoDropdownPressed() {

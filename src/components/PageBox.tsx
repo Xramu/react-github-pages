@@ -1,6 +1,10 @@
 import React from "react"
 
-function PageBox({ children }: { children: React.ReactNode }) {
+type PageBoxProps = {
+  children: JSX.Element
+}
+
+function PageBox({ children }: PageBoxProps) {
   return <div className="Page-box">{children}</div>
 }
 

@@ -1,12 +1,11 @@
 import React from "react"
 
-function NavigationButton({
-  onClick,
-  text,
-}: {
+type NavigationButtonProps = {
   onClick: Function
   text: string
-}) {
+}
+
+function NavigationButton({ onClick, text }: NavigationButtonProps) {
   return (
     <button
       className="Navigation-button"

@@ -2,7 +2,11 @@ import React from "react"
 import colors from "../utils/Colors.json"
 import { SocialIcon } from "react-social-icons"
 
-function SocialButton({ url }: { url: string }) {
+type SocialButtonProps = {
+  url: string
+}
+
+function SocialButton({ url }: SocialButtonProps) {
   return (
     <SocialIcon
       className="Socials-icon"

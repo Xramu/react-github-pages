@@ -1,14 +1,12 @@
 import React from "react"
 
-function ToolIcon({
-  src,
-  alt,
-  link,
-}: {
+type ToolIconProps = {
   src?: string
   alt?: string
   link?: string
-}) {
+}
+
+function ToolIcon({ src, alt, link }: ToolIconProps) {
   // Cleate image
   let icon = <img className="Tool-icon" alt={alt} src={src} />
 
