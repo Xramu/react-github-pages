@@ -1,14 +1,20 @@
 import React from "react"
 
-function NavigationButton(props: { onClick: Function; text: string }) {
+function NavigationButton({
+  onClick,
+  text,
+}: {
+  onClick: Function
+  text: string
+}) {
   return (
     <button
       className="Navigation-button"
       onClick={() => {
-        props.onClick()
+        onClick()
       }}
     >
-      {props.text}
+      {text}
     </button>
   )
 }

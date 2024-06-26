@@ -1,17 +1,25 @@
 import React from "react"
 
-function ToolIcon(props: { src?: string; alt?: string; link?: string }) {
+function ToolIcon({
+  src,
+  alt,
+  link,
+}: {
+  src?: string
+  alt?: string
+  link?: string
+}) {
   // Cleate image
-  let icon = <img className="Tool-icon" alt={props.alt} src={props.src} />
+  let icon = <img className="Tool-icon" alt={alt} src={src} />
 
   // Add possible anchor
-  if (props.link && props.link.length > 0) {
+  if (link && link.length > 0) {
     icon = (
       <a
         className="Tool-icon-link"
         target="_blank"
         rel="noopener noreferrer"
-        href={props.link}
+        href={link}
       >
         {icon}
       </a>
@@ -22,7 +30,7 @@ function ToolIcon(props: { src?: string; alt?: string; link?: string }) {
   icon = (
     <div className="Tool-icon-container">
       {icon}
-      <p className="Tool-icon-container-text">{props.alt}</p>
+      <p className="Tool-icon-container-text">{alt}</p>
     </div>
   )
 

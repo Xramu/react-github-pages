@@ -1,6 +1,12 @@
-import React, { ReactNode, useState } from "react"
+import React, { useState } from "react"
 
-function ProjectInfoDropdownBox(props: { title: string; children: ReactNode }) {
+function ProjectInfoDropdownBox({
+  title,
+  children,
+}: {
+  title: string
+  children: JSX.Element
+}) {
   const [isShowingInfo, setIsShowingInfo] = useState(false)
 
   function OnInfoDropdownPressed() {
@@ -9,8 +15,8 @@ function ProjectInfoDropdownBox(props: { title: string; children: ReactNode }) {
 
   return (
     <div>
-      <h4 onClick={() => OnInfoDropdownPressed()}>{props.title}</h4>
-      {isShowingInfo ? props.children : null}
+      <h4 onClick={() => OnInfoDropdownPressed()}>{title}</h4>
+      {isShowingInfo ? children : null}
     </div>
   )
 }
