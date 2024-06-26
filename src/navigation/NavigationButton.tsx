@@ -1,18 +1,13 @@
 import React from "react"
 
 type NavigationButtonProps = {
-  onClick: Function
+  onClick: () => void
   text: string
 }
 
 function NavigationButton({ onClick, text }: NavigationButtonProps) {
   return (
-    <button
-      className="Navigation-button"
-      onClick={() => {
-        onClick()
-      }}
-    >
+    <button className="Navigation-button" onClick={onClick}>
       {text}
     </button>
   )

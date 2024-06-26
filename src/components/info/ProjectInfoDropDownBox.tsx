@@ -1,8 +1,8 @@
-import React, { useState } from "react"
+import React, { ReactNode, useState } from "react"
 
 type ProjectInfoDropdownBoxProps = {
   title: string
-  children: JSX.Element
+  children: ReactNode
 }
 
 function ProjectInfoDropdownBox({

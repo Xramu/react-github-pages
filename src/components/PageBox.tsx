@@ -1,7 +1,7 @@
-import React from "react"
+import React, { ReactNode } from "react"
 
 type PageBoxProps = {
-  children: JSX.Element
+  children: ReactNode
 }
 
 function PageBox({ children }: PageBoxProps) {
