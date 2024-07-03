@@ -1,7 +1,7 @@
 import React, { ReactNode, useState } from "react"
+import InfoTabButton from "../InfoTabButton"
 
-// TODO: Create a row of buttons with the given titles that smoothly changes the content shown in a box underneath.
-// TODO: Also to set default node on load up
+// TODO: Style buttons and info box more. Make the text smoothly transition
 
 type ProjectInfoDropdownBoxProps = {
   tileInfoSets: {
@@ -11,25 +11,32 @@ type ProjectInfoDropdownBoxProps = {
 }
 
 function ProjectInfoDropdownBox(props: ProjectInfoDropdownBoxProps) {
-  const [shownInfoNode, setShownInfoNode] = useState<ReactNode>()
+  const [shownInfoNode, setShownInfoNode] = useState<ReactNode>(
+    props.tileInfoSets[0]?.infoNode,
+  )
 
   return (
-    <div>
-      {props.tileInfoSets.map((titleInfoSet) => {
-        return (
-          <>
-            <h4
-              onClick={() => {
-                setShownInfoNode(titleInfoSet.infoNode)
-              }}
-            >
-              {titleInfoSet.title}
-            </h4>
-          </>
-        )
-      })}
+    <>
+      <div className="Project-preview-info-button-row">
+        {props.tileInfoSets.map((titleInfoSet) => {
+          return (
+            <>
+              <InfoTabButton
+                selected={
+                  shownInfoNode === titleInfoSet.infoNode ? true : false
+                }
+                onClick={() => {
+                  setShownInfoNode(titleInfoSet.infoNode)
+                }}
+              >
+                {titleInfoSet.title}
+              </InfoTabButton>
+            </>
+          )
+        })}
+      </div>
       {shownInfoNode}
-    </div>
+    </>
   )
 }
 

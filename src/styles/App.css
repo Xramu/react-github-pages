@@ -98,10 +98,6 @@
   justify-content: space-between;
 }
 
-/*.Page-inline-list {
-  margin-right: 40px;
-}*/
-
 /* Projects */
 
 .Project-preview {
@@ -115,6 +111,27 @@
   display: block;
   justify-content: center;
   width: 40%;
+}
+
+.Project-preview-info-button-row {
+  display: flex;
+  column-gap: 20px;
+}
+
+.Info-tab-button {
+  cursor: pointer;
+  font-size: calc(10px + 1vmin);
+  margin: 20px 0px;
+  
+  border: none;
+  border-bottom: solid 2px var(--primary-text-color);
+  color: var(--primary-text-color);
+  background-color: #00000000;
+}
+
+.Info-tab-button-active {
+  cursor: auto;
+  border-bottom: solid 2px var(--primary-color);
 }
 
 /* Navigation */
