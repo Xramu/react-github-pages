@@ -14,7 +14,12 @@
   color: var(--secondary-color);
 }
 
+button {
+  font-family: monospace;
+}
+
 .App {
+  font-family: monospace;
   text-align: center;
   background-color: var(--background-color);
   min-height: 100vh;
@@ -113,7 +118,16 @@
   width: 40%;
 }
 
-.Project-preview-info-button-row {
+.Project-info-box {
+  margin: 10px 0px 0px 0px;
+}
+
+.Project-info-box-content {
+  padding-left: 20px;
+  border-left: solid 4px var(--primary-color);
+}
+
+.Project-info-button-row {
   display: flex;
   column-gap: 20px;
 }
@@ -121,7 +135,7 @@
 .Info-tab-button {
   cursor: pointer;
   font-size: calc(10px + 1vmin);
-  margin: 20px 0px;
+  margin: 10px 0px 0px 0px;
   
   border: none;
   border-bottom: solid 2px var(--primary-text-color);
@@ -131,7 +145,7 @@
 
 .Info-tab-button-active {
   cursor: auto;
-  border-bottom: solid 2px var(--primary-color);
+  border-bottom: solid 4px var(--primary-color);
 }
 
 /* Navigation */
@@ -139,7 +153,7 @@
 .Navigation-bar {
   overflow: hidden;
   background-color: var(--primary-color);
-  border-bottom: solid 5px var(--secondary-color);
+  border-bottom: solid 5px var(--primary-text-color);
   display: flex;
   flex-direction: row;
   justify-content:space-between;
