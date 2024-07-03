@@ -1,24 +1,34 @@
 import React, { ReactNode, useState } from "react"
 
+// TODO: Create a row of buttons with the given titles that smoothly changes the content shown in a box underneath.
+// TODO: Also to set default node on load up
+
 type ProjectInfoDropdownBoxProps = {
-  title: string
-  children: ReactNode
+  tileInfoSets: {
+    title: string
+    infoNode: ReactNode
+  }[]
 }
 
-function ProjectInfoDropdownBox({
-  title,
-  children,
-}: ProjectInfoDropdownBoxProps) {
-  const [isShowingInfo, setIsShowingInfo] = useState(false)
-
-  function OnInfoDropdownPressed() {
-    setIsShowingInfo(!isShowingInfo)
-  }
+function ProjectInfoDropdownBox(props: ProjectInfoDropdownBoxProps) {
+  const [shownInfoNode, setShownInfoNode] = useState<ReactNode>()
 
   return (
     <div>
-      <h4 onClick={() => OnInfoDropdownPressed()}>{title}</h4>
-      {isShowingInfo ? children : null}
+      {props.tileInfoSets.map((titleInfoSet) => {
+        return (
+          <>
+            <h4
+              onClick={() => {
+                setShownInfoNode(titleInfoSet.infoNode)
+              }}
+            >
+              {titleInfoSet.title}
+            </h4>
+          </>
+        )
+      })}
+      {shownInfoNode}
     </div>
   )
 }
