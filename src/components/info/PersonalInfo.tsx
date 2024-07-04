@@ -115,8 +115,9 @@ function PersonalInfo() {
       <p>
         Hi, I am known as Xramu online and I am a game and software developer
         from Espoo, Finland.
-        <br />I enjoy solving problems and learning something new from them!
       </p>
+
+      <p>I enjoy solving problems and learning something new from them!</p>
 
       <p>
         Learning new frameworks, languages, language features and tools gives me
@@ -128,35 +129,32 @@ function PersonalInfo() {
       <div className="Page-inline">
         <div className="Page-inline-list">
           <h3>Programming Languages</h3>
-          <ul>
-            <li>C#, C++ & C</li>
-            <li>Java & Kotlin</li>
-            <li>JavaScript & TypeScript</li>
-            <li>Lua & Luau</li>
-            <li>HTML & CSS</li>
-          </ul>
+
+          <li>C#, C++ & C</li>
+          <li>Java & Kotlin</li>
+          <li>JavaScript & TypeScript</li>
+          <li>Lua & Luau</li>
+          <li>HTML & CSS</li>
         </div>
 
         <div className="Page-inline-list">
           <h3>Frameworks & Tools</h3>
-          <ul>
-            <li>Unity</li>
-            <li>React & React Native</li>
-            <li>Android Studio</li>
-            <li>Roblox Studio</li>
-            <li>Visual Studio & VSCode</li>
-            <li>Node.js</li>
-            <li>Git</li>
-          </ul>
+
+          <li>Unity</li>
+          <li>React & React Native</li>
+          <li>Android Studio</li>
+          <li>Roblox Studio</li>
+          <li>Visual Studio & VSCode</li>
+          <li>Node.js</li>
+          <li>Git</li>
         </div>
 
         <div className="Page-inline-list">
           <h3>Other Skills</h3>
-          <ul>
-            <li>Scrum and week-based sprints</li>
-            <li>Object-oriented principles & patterns</li>
-            <li>Keeping code readable and commented</li>
-          </ul>
+
+          <li>Scrum and week-based sprints</li>
+          <li>Object-oriented principles & patterns</li>
+          <li>Keeping code readable and commented</li>
         </div>
       </div>
 
