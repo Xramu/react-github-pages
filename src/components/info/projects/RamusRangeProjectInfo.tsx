@@ -1,6 +1,9 @@
 import RamusRangeBanner from "../../../img/ramus_range/RamusRangeBanner.jpg"
 import ProjectInfoDropdownBox from "../ProjectInfoDropdownBox"
 import { StringReactNodePair } from "../../../utils/Types"
+import ProjectImage from "../ProjectImage"
+import ProjectTitle from "../ProjectTitle"
+import ProjectSummary from "../ProjectSummary"
 
 // Info Tabs of this project
 
@@ -68,22 +71,14 @@ const gunsAndModelsInfoSet: StringReactNodePair = {
 function RamusRangeProjectInfo() {
   return (
     <div>
-      <h2>
-        <u>Ramu's Gun Range</u>
-      </h2>
+      <ProjectTitle>Ramu's Gun Range</ProjectTitle>
 
-      <p>
+      <ProjectSummary>
         Ramu's Gun Range is an interactive VRChat shooting range experience with
         detailed gunplay and functionality created with Unity and C#.
-      </p>
+      </ProjectSummary>
 
-      <div className="Project-preview">
-        <img
-          src={RamusRangeBanner}
-          alt="Banner of Ramu's Gun Range"
-          className="Project-preview-banner"
-        />
-      </div>
+      <ProjectImage src={RamusRangeBanner} alt="Banner of Ramu's Gun Range" />
 
       <ProjectInfoDropdownBox
         tileInfoSets={[

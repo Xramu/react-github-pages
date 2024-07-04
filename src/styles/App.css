@@ -4,6 +4,7 @@
   --background-color: #282c34;
 
   --primary-text-color: white;
+  --primary-font-family: monospace;
 }
 
 :link {
@@ -15,11 +16,11 @@
 }
 
 button {
-  font-family: monospace;
+  font-family: var(--primary-font-family);
 }
 
 .App {
-  font-family: monospace;
+  font-family: var(--primary-font-family);
   text-align: center;
   background-color: var(--background-color);
   min-height: 100vh;
@@ -85,11 +86,11 @@ button {
 /* Pages */
 
 .Page {
-  font-size: calc(10px + 1vmin);
+  font-size: max(5px, 2.5vmin);
   display: flex;
   justify-content: center;
   text-align: left;
-  margin: 0px 20px;
+  margin: 0px max(4px, 6vmin);
 }
 
 .Page-box {

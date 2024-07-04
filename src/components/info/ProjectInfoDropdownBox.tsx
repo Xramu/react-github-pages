@@ -18,7 +18,7 @@ function ProjectInfoDropdownBox(props: ProjectInfoDropdownBoxProps) {
       <div className="Project-info-button-row">
         {props.tileInfoSets.map((titleInfoSet) => {
           return (
-            <>
+            <div key={titleInfoSet.string}>
               <InfoTabButton
                 selected={shownInfoNode === titleInfoSet.node ? true : false}
                 onClick={() => {
@@ -27,7 +27,7 @@ function ProjectInfoDropdownBox(props: ProjectInfoDropdownBoxProps) {
               >
                 {titleInfoSet.string}
               </InfoTabButton>
-            </>
+            </div>
           )
         })}
       </div>
