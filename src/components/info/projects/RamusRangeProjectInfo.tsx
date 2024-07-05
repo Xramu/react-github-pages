@@ -56,12 +56,15 @@ const environmentInfoSet: StringReactNodePair = {
 }
 
 const gunsAndModelsInfoSet: StringReactNodePair = {
-  string: "Gun Models & Sounds",
+  string: "Assets",
   node: (
     <p>
-      Almost all of the 3D gun models are bought from{" "}
+      3D gun models are bought from{" "}
       <a href="https://tomcattoybox.booth.pm/">Tomcat's Booth Store.</a>
       <br />
+      All of the audio is{" "}
+      <a href="https://creativecommons.org/public-domain/cc0/">CC0</a> licensed
+      downloaded from <a href="https://freesound.org/">Freesound.org</a>
     </p>
   ),
 }
