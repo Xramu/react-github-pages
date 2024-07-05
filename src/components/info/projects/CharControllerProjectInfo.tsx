@@ -18,8 +18,8 @@ const detailsInfoSet: StringReactNodePair = {
   ),
 }
 
-const possibleMovementsInfoSet: StringReactNodePair = {
-  string: "Possible Movement",
+const movementsInfoSet: StringReactNodePair = {
+  string: "Movement",
   node: (
     <>
       <p>
@@ -89,7 +89,7 @@ function CharControllerProjectInfo() {
       <ProjectInfoDropdownBox
         tileInfoSets={[
           detailsInfoSet,
-          possibleMovementsInfoSet,
+          movementsInfoSet,
           cameraInfoSet,
           inputInfoSet,
         ]}
