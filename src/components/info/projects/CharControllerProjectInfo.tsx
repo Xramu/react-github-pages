@@ -3,6 +3,8 @@ import ProjectTitle from "../ProjectTitle"
 import ProjectInfoDropdownBox from "../ProjectInfoDropdownBox"
 import { StringReactNodePair } from "../../../utils/Types"
 import ProjectSummary from "../ProjectSummary"
+import SocialButton from "../../SocialButton"
+import colors from "../../../utils/Colors.json"
 
 const detailsInfoSet: StringReactNodePair = {
   string: "Details",
@@ -78,6 +80,12 @@ function CharControllerProjectInfo() {
       <ProjectTitle>
         First-Person and Third-Person Character Controller Demo
       </ProjectTitle>
+
+      <SocialButton
+        fgColor={colors["primary-text-color"]}
+        bgColor={colors["primary-color"]}
+        url="https://github.com/Xramu/Player-Controller-Demo"
+      />
 
       <ProjectSummary>
         Character controller Unity project.

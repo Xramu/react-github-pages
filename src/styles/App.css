@@ -116,7 +116,7 @@ button {
   border-radius: 4px;
   display: block;
   justify-content: center;
-  width: 40%;
+  width: 70cqi;
 }
 
 .Project-info-box {
@@ -124,6 +124,7 @@ button {
 }
 
 .Project-info-box-content {
+  margin-top: 10px;
   padding-left: 20px;
   border-left: solid 4px var(--primary-color);
 }

@@ -4,14 +4,19 @@ import { SocialIcon } from "react-social-icons"
 
 type SocialButtonProps = {
   url: string
+  fgColor?: string
+  bgColor?: string
 }
 
-function SocialButton({ url }: SocialButtonProps) {
+function SocialButton({ url, fgColor, bgColor }: SocialButtonProps) {
+  fgColor = fgColor || colors["primary-text-color"]
+  bgColor = bgColor || colors["secondary-color"]
+
   return (
     <SocialIcon
       className="Socials-icon"
-      fgColor={colors["primary-text-color"]}
-      bgColor={colors["secondary-color"]}
+      fgColor={fgColor}
+      bgColor={bgColor}
       url={url}
     />
   )
