@@ -63,7 +63,7 @@ const cameraInfoSet: StringReactNodePair = {
 }
 
 const inputInfoSet: StringReactNodePair = {
-  string: "Gamepad Input",
+  string: "Input",
   node: (
     <p>
       In addition to mouse and keyboard, the project has Unity's Input System
