@@ -2,6 +2,7 @@ import React from "react"
 
 import { ToolIcon } from "./ToolIcon"
 import HorizontalLine from "../HorizontalLine"
+import TitledList from "../TitledList"
 
 function getLanguagesRow() {
   return (
@@ -127,35 +128,38 @@ function PersonalInfo() {
       <h2>What I Am Familiar With</h2>
 
       <div className="Page-inline">
-        <div className="Page-inline-list">
-          <h3>Programming Languages</h3>
+        <TitledList
+          title="Programming Languages"
+          listItems={[
+            "C#, C++ & C",
+            "Java & Kotlin",
+            "JavaScript & TypeScript",
+            "Lua & Luau",
+            "HTML & CSS",
+          ]}
+        />
 
-          <li>C#, C++ & C</li>
-          <li>Java & Kotlin</li>
-          <li>JavaScript & TypeScript</li>
-          <li>Lua & Luau</li>
-          <li>HTML & CSS</li>
-        </div>
+        <TitledList
+          title="Frameworks & Tools"
+          listItems={[
+            "Unity",
+            "React & React Native",
+            "Android Studio",
+            "Roblox Studio",
+            "Visual Studio & VSCode",
+            "Node.js",
+            "Git",
+          ]}
+        />
 
-        <div className="Page-inline-list">
-          <h3>Frameworks & Tools</h3>
-
-          <li>Unity</li>
-          <li>React & React Native</li>
-          <li>Android Studio</li>
-          <li>Roblox Studio</li>
-          <li>Visual Studio & VSCode</li>
-          <li>Node.js</li>
-          <li>Git</li>
-        </div>
-
-        <div className="Page-inline-list">
-          <h3>Other Skills</h3>
-
-          <li>Scrum and week-based sprints</li>
-          <li>Object-oriented principles & patterns</li>
-          <li>Keeping code readable and commented</li>
-        </div>
+        <TitledList
+          title="Other Skills"
+          listItems={[
+            "Scrum and week-based sprints",
+            "Object-oriented principles & patterns",
+            "Keeping code readable and commented",
+          ]}
+        />
       </div>
 
       <HorizontalLine />
