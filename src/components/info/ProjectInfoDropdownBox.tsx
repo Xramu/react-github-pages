@@ -2,7 +2,7 @@ import React, { ReactNode, useState } from "react"
 import InfoTabButton from "../InfoTabButton"
 import { StringReactNodePair } from "../../utils/Types"
 
-// TODO: Style buttons and info box more. Make the text smoothly transition
+// TODO: Transition smoothly when changing the current node in the info dropdown box
 
 type ProjectInfoDropdownBoxProps = {
   tileInfoSets: StringReactNodePair[]
