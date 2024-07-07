@@ -93,6 +93,10 @@ button {
   margin: 0px max(4px, 6vmin);
 }
 
+.Page-container {
+  width: 100%;
+}
+
 .Page-box {
   border: solid 4px;
   border-radius: 2px;
@@ -143,11 +147,23 @@ button {
   border-bottom: solid 2px var(--primary-text-color);
   color: var(--primary-text-color);
   background-color: #00000000;
+  transition: border-bottom 100ms;
+}
+
+.Info-tab-button:hover {
+  border-bottom: solid 4px var(--primary-text-color);
 }
 
 .Info-tab-button-active {
   cursor: auto;
+  font-size: calc(10px + 1vmin);
+  margin: 10px 0px 0px 0px;
+  
+  border: none;
   border-bottom: solid 4px var(--primary-color);
+  color: var(--primary-text-color);
+  background-color: #00000000;
+  transition: border-bottom 100ms;
 }
 
 /* Navigation */

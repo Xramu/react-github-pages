@@ -1,10 +1,11 @@
 import React from "react"
+import PageContainer from "./PageContainer"
 
 function HomeView() {
   return (
-    <div>
+    <PageContainer>
       <p>Nothing here yet...</p>
-    </div>
+    </PageContainer>
   )
 }
 

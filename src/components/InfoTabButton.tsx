@@ -12,9 +12,7 @@ function InfoTabButton({
 }: InfoTabButtonProps) {
   return (
     <button
-      className={
-        selected ? "Info-tab-button Info-tab-button-active" : "Info-tab-button"
-      }
+      className={selected ? "Info-tab-button-active" : "Info-tab-button"}
       {...rest}
     >
       {children ? children : <></>}
