@@ -5,6 +5,8 @@
 
   --primary-text-color: white;
   --primary-font-family: monospace;
+
+  --info-tab-button-animation-speed: 100ms;
 }
 
 :link {
@@ -147,11 +149,12 @@ button {
   border-bottom: solid 2px var(--primary-text-color);
   color: var(--primary-text-color);
   background-color: #00000000;
-  transition: border-bottom 100ms;
+  transition: border-bottom var(--info-tab-button-animation-speed);
 }
 
 .Info-tab-button:hover {
   border-bottom: solid 4px var(--primary-text-color);
+  transition: border-bottom var(--info-tab-button-animation-speed);
 }
 
 .Info-tab-button-active {
@@ -163,7 +166,7 @@ button {
   border-bottom: solid 4px var(--primary-color);
   color: var(--primary-text-color);
   background-color: #00000000;
-  transition: border-bottom 100ms;
+  transition: border-bottom var(--info-tab-button-animation-speed);
 }
 
 /* Navigation */
