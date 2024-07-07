@@ -134,6 +134,7 @@ button {
   margin-top: 10px;
   padding-left: 20px;
   border-left: solid 4px var(--primary-color);
+  overflow: hidden;
 }
 
 .Project-info-button-row {
@@ -174,22 +175,26 @@ button {
 
 .Info-set-enter {
   opacity: 0.01;
-  transition: opacity var(--info-box-content-animation-speed);
+  translate: -110% 0%;
 }
 
 .Info-set-enter-active {
   opacity: 1;
-  transition: opacity var(--info-box-content-animation-speed);
+  translate: 0% 0%;
 }
 
 .Info-set-exit {
+  translate: 0% 0%;
   opacity: 1;
-  transition: opacity var(--info-box-content-animation-speed);
 }
 
 .Info-set-exit-active {
   opacity: 0.01;
-  transition: opacity var(--info-box-content-animation-speed);
+  translate: -110% 0%;
+}
+
+.Info-set-enter-active, .Info-set-exit-active {
+  transition: all var(--info-box-content-animation-speed) ease-in;
 }
 
 /* Navigation */

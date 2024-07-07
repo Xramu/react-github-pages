@@ -3,8 +3,6 @@ import InfoTabButton from "../InfoTabButton"
 import { StringReactNodePair } from "../../utils/Types"
 import { CSSTransition, SwitchTransition } from "react-transition-group"
 
-// TODO: Transition the size of the content box smoothly to fit the size of the next content for it. Hide overflow
-
 type ProjectInfoDropdownBoxProps = {
   tileInfoSets: StringReactNodePair[]
 }
