@@ -7,6 +7,7 @@
   --primary-font-family: monospace;
 
   --info-tab-button-animation-speed: 100ms;
+  --info-box-content-animation-speed: 300ms;
 }
 
 :link {
@@ -167,6 +168,28 @@ button {
   color: var(--primary-text-color);
   background-color: #00000000;
   transition: border-bottom var(--info-tab-button-animation-speed);
+}
+
+/* Info set transitions */
+
+.Info-set-enter {
+  opacity: 0.01;
+  transition: opacity var(--info-box-content-animation-speed);
+}
+
+.Info-set-enter-active {
+  opacity: 1;
+  transition: opacity var(--info-box-content-animation-speed);
+}
+
+.Info-set-exit {
+  opacity: 1;
+  transition: opacity var(--info-box-content-animation-speed);
+}
+
+.Info-set-exit-active {
+  opacity: 0.01;
+  transition: opacity var(--info-box-content-animation-speed);
 }
 
 /* Navigation */

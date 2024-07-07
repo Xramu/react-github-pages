@@ -1,17 +1,20 @@
-import React, { ReactNode, useState } from "react"
+import React, { useRef, useState } from "react"
 import InfoTabButton from "../InfoTabButton"
 import { StringReactNodePair } from "../../utils/Types"
+import { CSSTransition, SwitchTransition } from "react-transition-group"
 
-// TODO: Transition smoothly when changing the current node in the info dropdown box
+// TODO: Transition the size of the content box smoothly to fit the size of the next content for it. Hide overflow
 
 type ProjectInfoDropdownBoxProps = {
   tileInfoSets: StringReactNodePair[]
 }
 
 function ProjectInfoDropdownBox(props: ProjectInfoDropdownBoxProps) {
-  const [shownInfoNode, setShownInfoNode] = useState<ReactNode>(
-    props.tileInfoSets[0]?.node,
+  const [shownInfoSet, setShownInfoSet] = useState<StringReactNodePair>(
+    props.tileInfoSets[0],
   )
+
+  const contentNodeRef = useRef(null)
 
   return (
     <div className="Project-info-box">
@@ -20,9 +23,11 @@ function ProjectInfoDropdownBox(props: ProjectInfoDropdownBoxProps) {
           return (
             <div key={titleInfoSet.string}>
               <InfoTabButton
-                selected={shownInfoNode === titleInfoSet.node ? true : false}
+                selected={
+                  shownInfoSet.string === titleInfoSet.string ? true : false
+                }
                 onClick={() => {
-                  setShownInfoNode(titleInfoSet.node)
+                  setShownInfoSet(titleInfoSet)
                 }}
               >
                 {titleInfoSet.string}
@@ -31,7 +36,18 @@ function ProjectInfoDropdownBox(props: ProjectInfoDropdownBoxProps) {
           )
         })}
       </div>
-      <div className="Project-info-box-content">{shownInfoNode}</div>
+      <div className="Project-info-box-content">
+        <SwitchTransition>
+          <CSSTransition
+            nodeRef={contentNodeRef}
+            key={shownInfoSet.string}
+            timeout={300}
+            classNames={"Info-set"}
+          >
+            <div ref={contentNodeRef}>{shownInfoSet.node}</div>
+          </CSSTransition>
+        </SwitchTransition>
+      </div>
     </div>
   )
 }
