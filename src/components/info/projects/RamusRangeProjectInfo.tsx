@@ -4,7 +4,6 @@ import { StringReactNodePair } from "../../../utils/Types"
 import ProjectImage from "../ProjectImage"
 import ProjectTitle from "../ProjectTitle"
 import ProjectSummary from "../ProjectSummary"
-import ProjectVideo from "../ProjectVideo"
 
 // Info Tabs of this project
 
@@ -83,8 +82,6 @@ function RamusRangeProjectInfo() {
       </ProjectSummary>
 
       <ProjectImage src={RamusRangeBanner} alt="Banner of Ramu's Gun Range" />
-
-      <ProjectVideo url={new URL("http://www.facebook.com")} />
 
       <ProjectInfoDropdownBox
         tileInfoSets={[
