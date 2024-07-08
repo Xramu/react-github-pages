@@ -1,11 +1,20 @@
 import React, { ReactNode } from "react"
+import styled from "styled-components"
+
+// Styled Components
+
+const PageContainerStyledDiv = styled.div`
+  width: 100%;
+`
+
+// Component Props & Export
 
 type PageContainerProps = {
   children?: ReactNode
 }
 
 function PageContainer({ children }: PageContainerProps) {
-  return <div className="Page-container">{children ?? children}</div>
+  return <PageContainerStyledDiv>{children ?? children}</PageContainerStyledDiv>
 }
 
 export default PageContainer

@@ -3,10 +3,18 @@ import React from "react"
 import { ToolIcon } from "./ToolIcon"
 import HorizontalLine from "../HorizontalLine"
 import TitledList from "../TitledList"
+import {
+  PageInlineCenterStyledDiv,
+  PageInlineSpaceBetweenStyledDiv,
+} from "../StyledComponents"
+
+// Styled Components
+
+// Languages/Tools Row Functions
 
 function getLanguagesRow() {
   return (
-    <div className="Tool-icon-row">
+    <PageInlineCenterStyledDiv>
       <ToolIcon
         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
         link="https://learn.microsoft.com/en-us/dotnet/csharp/"
@@ -57,13 +65,13 @@ function getLanguagesRow() {
         link="https://developer.mozilla.org/en-US/docs/Web/CSS"
         alt="CSS"
       />
-    </div>
+    </PageInlineCenterStyledDiv>
   )
 }
 
 function getToolsRow() {
   return (
-    <div className="Tool-icon-row">
+    <PageInlineCenterStyledDiv>
       <ToolIcon
         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg"
         link="https://unity.com/"
@@ -104,9 +112,11 @@ function getToolsRow() {
         link="https://git-scm.com/"
         alt="Git"
       />
-    </div>
+    </PageInlineCenterStyledDiv>
   )
 }
+
+// Component Export
 
 function PersonalInfo() {
   return (
@@ -127,7 +137,7 @@ function PersonalInfo() {
 
       <h2>What I Am Familiar With</h2>
 
-      <div className="Page-inline">
+      <PageInlineSpaceBetweenStyledDiv>
         <TitledList
           title="Programming Languages"
           listItems={[
@@ -160,7 +170,7 @@ function PersonalInfo() {
             "Keeping code readable and commented",
           ]}
         />
-      </div>
+      </PageInlineSpaceBetweenStyledDiv>
 
       <HorizontalLine />
 

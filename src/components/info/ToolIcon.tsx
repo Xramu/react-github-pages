@@ -1,4 +1,26 @@
 import React from "react"
+import styled from "styled-components"
+
+// Styled Components
+
+const ToolIconStyledImg = styled.img`
+  margin: 0.5vmin 1vmin;
+  margin-bottom: 0px;
+  height: 6cqi;
+`
+
+const ToolIconContainerStyledDiv = styled.div`
+  text-align: center;
+`
+
+const ToolIconTextStyledP = styled.p`
+  font-size: calc(5px + 1vmin);
+  text-align: center;
+  margin: 0px 0.5vmin;
+  margin-bottom: 0.5vmin;
+`
+
+// Component Props & Export
 
 type ToolIconProps = {
   src?: string
@@ -7,18 +29,13 @@ type ToolIconProps = {
 }
 
 function ToolIcon({ src, alt, link }: ToolIconProps) {
-  // Cleate image
-  let icon = <img className="Tool-icon" alt={alt} src={src} />
+  // Create image
+  let icon = <ToolIconStyledImg alt={alt} src={src} />
 
   // Add possible anchor
   if (link && link.length > 0) {
     icon = (
-      <a
-        className="Tool-icon-link"
-        target="_blank"
-        rel="noopener noreferrer"
-        href={link}
-      >
+      <a target="_blank" rel="noopener noreferrer" href={link}>
         {icon}
       </a>
     )
@@ -26,10 +43,10 @@ function ToolIcon({ src, alt, link }: ToolIconProps) {
 
   // Add everything into a container with a paragraph at the bottom
   icon = (
-    <div className="Tool-icon-container">
+    <ToolIconContainerStyledDiv>
       {icon}
-      <p className="Tool-icon-container-text">{alt}</p>
-    </div>
+      <ToolIconTextStyledP>{alt}</ToolIconTextStyledP>
+    </ToolIconContainerStyledDiv>
   )
 
   return icon

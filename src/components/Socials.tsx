@@ -1,13 +1,22 @@
 import React from "react"
 import SocialButton from "./SocialButton"
+import styled from "styled-components"
 
-// TODO: Use react-social-icons to create a row of social links
+// Styled Components
+
+const SocialsRowStyledDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+`
+
+// Component Export
+
 function Socials() {
   return (
-    <div className="Socials-row">
+    <SocialsRowStyledDiv>
       <SocialButton url="https://twitter.com/_Xramu" />
       <SocialButton url="https://github.com/Xramu" />
-    </div>
+    </SocialsRowStyledDiv>
   )
 }
 

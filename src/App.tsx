@@ -2,6 +2,21 @@ import React from "react"
 import "./styles/App.css"
 import colors from "./utils/Colors.json"
 import Navigation from "./navigation/Navigation"
+import styled from "styled-components"
+
+// Styled Components
+
+const AppStyledDiv = styled.div`
+  font-family: var(--primary-font-family);
+  text-align: center;
+  background-color: var(--background-color);
+  min-height: 100vh;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: var(--primary-text-color);
+`
+
+// Root Property Setup
 
 const root = document.documentElement
 
@@ -24,14 +39,16 @@ function SetUpColors() {
   SetStyleProperty("--primary-text-color", colors["primary-text-color"])
 }
 
+// Component Export
+
 function App() {
   // Make sure that the CSS color variables are matched to the JSON colors
   SetUpColors()
 
   return (
-    <div className="App">
+    <AppStyledDiv>
       <Navigation />
-    </div>
+    </AppStyledDiv>
   )
 }
 
