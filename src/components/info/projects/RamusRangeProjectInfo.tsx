@@ -1,9 +1,11 @@
 import RamusRangeBanner from "../../../img/ramus_range/RamusRangeBanner.jpg"
+import MahiroImage from "../../../img/mahiro.png"
 import ProjectInfoDropdownBox from "../ProjectInfoDropdownBox"
 import { StringReactNodePair } from "../../../utils/Types"
-import ProjectImage from "../ProjectImage"
 import ProjectTitle from "../ProjectTitle"
 import ProjectSummary from "../ProjectSummary"
+import ProjectMediaPreview from "../ProjectMediaPreview"
+import { FlexToFitStyledImg } from "../../StyledComponents"
 
 // Info Tabs of this project
 
@@ -81,7 +83,13 @@ function RamusRangeProjectInfo() {
         detailed gunplay and functionality created with Unity and C#.
       </ProjectSummary>
 
-      <ProjectImage src={RamusRangeBanner} alt="Banner of Ramu's Gun Range" />
+      <ProjectMediaPreview>
+        <FlexToFitStyledImg
+          src={RamusRangeBanner}
+          alt="Banner of Ramu's Gun Range"
+        />
+        <FlexToFitStyledImg src={MahiroImage} alt="Picture of Mahiro" />
+      </ProjectMediaPreview>
 
       <ProjectInfoDropdownBox
         tileInfoSets={[

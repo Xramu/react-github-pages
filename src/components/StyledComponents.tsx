@@ -15,3 +15,9 @@ export const PageInlineCenterStyledDiv = styled.div`
   align-content: center;
   justify-content: center;
 `
+// Images
+
+export const FlexToFitStyledImg = styled.img`
+  width: 100%;
+  object-fit: scale-down;
+`
