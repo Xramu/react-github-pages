@@ -1,16 +1,27 @@
 import React from "react"
 import styled from "styled-components"
 
+// Animation Constants
+
+const iconHoverOverAnimationTimeMs = 100
+
 // Styled Components
+
+const ToolIconContainerStyledDiv = styled.div`
+  text-align: center;
+
+  &:hover {
+    transform: scale(110%);
+    transition: all ${iconHoverOverAnimationTimeMs}ms ease-in;
+  }
+
+  transition: all ${iconHoverOverAnimationTimeMs}ms ease-in;
+`
 
 const ToolIconStyledImg = styled.img`
   margin: 0.5vmin 1vmin;
   margin-bottom: 0px;
   height: 6cqi;
-`
-
-const ToolIconContainerStyledDiv = styled.div`
-  text-align: center;
 `
 
 const ToolIconTextStyledP = styled.p`
