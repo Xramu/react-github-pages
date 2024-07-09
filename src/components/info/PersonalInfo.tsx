@@ -120,7 +120,7 @@ function getToolsRow() {
 
 function PersonalInfo() {
   return (
-    <div>
+    <>
       <h1>About Me</h1>
 
       <p>
@@ -176,7 +176,7 @@ function PersonalInfo() {
 
       {getLanguagesRow()}
       {getToolsRow()}
-    </div>
+    </>
   )
 }
 

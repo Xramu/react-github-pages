@@ -8,7 +8,7 @@ import YahtzeeAppProjectInfo from "./projects/YahtzeeAppProjectInfo"
 
 function ProjectsInfo() {
   return (
-    <div className="Page-section">
+    <>
       <h1>Unity Projects</h1>
 
       <HorizontalLine />
@@ -32,7 +32,7 @@ function ProjectsInfo() {
       <YahtzeeAppProjectInfo />
 
       <HorizontalLine />
-    </div>
+    </>
   )
 }
 

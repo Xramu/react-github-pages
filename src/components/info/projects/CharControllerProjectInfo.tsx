@@ -76,7 +76,7 @@ const inputInfoSet: StringReactNodePair = {
 
 function CharControllerProjectInfo() {
   return (
-    <div>
+    <>
       <ProjectTitle>
         First-Person and Third-Person Character Controller Demo
       </ProjectTitle>
@@ -102,7 +102,7 @@ function CharControllerProjectInfo() {
           inputInfoSet,
         ]}
       />
-    </div>
+    </>
   )
 }
 

@@ -75,7 +75,7 @@ const gunsAndModelsInfoSet: StringReactNodePair = {
 
 function RamusRangeProjectInfo() {
   return (
-    <div>
+    <>
       <ProjectTitle>Ramu's Gun Range</ProjectTitle>
 
       <ProjectSummary>
@@ -99,7 +99,7 @@ function RamusRangeProjectInfo() {
           gunsAndModelsInfoSet,
         ]}
       />
-    </div>
+    </>
   )
 }
 
