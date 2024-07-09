@@ -1,6 +1,8 @@
-import React, { Children, ReactNode } from "react"
+import React, { Children, ReactNode, useState } from "react"
 import styled from "styled-components"
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md"
+
+// TODO: Make media nodes slide smoothly left to right and vice versa
 
 // Animation Constants
 
@@ -77,11 +79,19 @@ type ProjectMediaPreviewProps = {
 }
 
 function ProjectMediaPreview({ children }: ProjectMediaPreviewProps) {
+  const [imageId, setImageId] = useState(0)
+
   const mediaNodes = Children.toArray(children)
 
-  function onPressLeftArrow() {}
+  function onPressLeftArrow() {
+    // Make sure value loops back to max if about to reach negative
+    setImageId(imageId - 1 < 0 ? mediaNodes.length : imageId - 1)
+  }
 
-  function onPressRightArrow() {}
+  function onPressRightArrow() {
+    // Use mod to cap the id within the array length
+    setImageId((imageId + 1) % mediaNodes.length)
+  }
 
   return (
     <MediaPreviewContainerStyledDiv>
@@ -91,9 +101,7 @@ function ProjectMediaPreview({ children }: ProjectMediaPreviewProps) {
       >
         <MdArrowBackIos className={buttonIconClassName} />
       </MediaNavigationStyledButton>
-      <MediaCenterStyledDiv>
-        {mediaNodes.map((node) => node)}
-      </MediaCenterStyledDiv>
+      <MediaCenterStyledDiv>{mediaNodes[imageId]}</MediaCenterStyledDiv>
       <MediaNavigationStyledButton
         onClick={onPressRightArrow}
         gradientDirection="to left"
