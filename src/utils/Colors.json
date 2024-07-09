@@ -2,5 +2,6 @@
   "primary-color": "#a36590",
   "secondary-color": "#603954",
   "background-color": "#282c34",
-  "primary-text-color": "white"
+  "primary-text-color": "white",
+  "media-background-color": "black"
 }
