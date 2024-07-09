@@ -1,5 +1,6 @@
 import React, { ComponentPropsWithoutRef, ReactNode } from "react"
 import styled from "styled-components"
+import { BouncyClickAnimationsCSS } from "./StyledComponents"
 
 // Animation Constants
 
@@ -10,6 +11,7 @@ const activeButtonName = "Info-tab-button-active"
 
 const StyledInfoButton = styled.button`
   &.${inactiveButtonName} {
+    ${BouncyClickAnimationsCSS}
     cursor: pointer;
     font-size: calc(10px + 1vmin);
     margin: 10px 0px 0px 0px;
@@ -18,11 +20,11 @@ const StyledInfoButton = styled.button`
     border-bottom: solid 2px var(--primary-text-color);
     color: var(--primary-text-color);
     background-color: #00000000;
-    transition: border-bottom var(--info-tab-button-animation-speed);
+    transition: all var(--info-tab-button-animation-speed) ease-in;
 
     &:hover {
       border-bottom: solid 4px var(--primary-text-color);
-      transition: border-bottom var(--info-tab-button-animation-speed);
+      transition: all var(--info-tab-button-animation-speed) ease-in;
     }
   }
 
@@ -35,7 +37,7 @@ const StyledInfoButton = styled.button`
     border-bottom: solid 4px var(--primary-color);
     color: var(--primary-text-color);
     background-color: #00000000;
-    transition: border-bottom var(--info-tab-button-animation-speed);
+    transition: all var(--info-tab-button-animation-speed) ease-in;
   }
 `
 

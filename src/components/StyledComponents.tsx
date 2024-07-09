@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
 /* File for shared styling between different components */
 
@@ -21,4 +21,23 @@ export const FlexToFitStyledImg = styled.img`
   max-width: 100%;
   max-height: 100%;
   margin: auto;
+`
+// Animations
+
+const hoverEnterAnimationTime = 100
+const activeEnterAnimationTime = 70
+const animationExitTime = 100
+
+export const BouncyClickAnimationsCSS = css`
+  transition: all ${animationExitTime}ms ease-in;
+
+  &:hover {
+    transform: scale(110%);
+    transition: all ${hoverEnterAnimationTime}ms ease-in;
+  }
+
+  &:active {
+    transform: scale(90%);
+    transition: all ${activeEnterAnimationTime}ms ease-in;
+  }
 `

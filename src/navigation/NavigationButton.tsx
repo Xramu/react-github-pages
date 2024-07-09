@@ -1,16 +1,13 @@
-import React from "react"
 import styled from "styled-components"
-
-// Animation Constants
-
-const navigationButtonHoverAnimationTimeMs = 100
-const navigationButtonActiveAnimationTimeMs = 70
+import { BouncyClickAnimationsCSS } from "../components/StyledComponents"
 
 // Styled Components
 
 // TODO: Use similar styling as the info tab buttons
 
 const NavigationStyledButton = styled.button`
+  ${BouncyClickAnimationsCSS}
+
   cursor: pointer;
   background-color: #00000000;
   border: none;
@@ -20,18 +17,6 @@ const NavigationStyledButton = styled.button`
   text-decoration: none;
   display: inline-flex;
   font-size: calc(10px + 2vmin);
-
-  transition: all ${navigationButtonHoverAnimationTimeMs}ms ease-in;
-
-  &:hover {
-    transform: scale(110%);
-    transition: all ${navigationButtonHoverAnimationTimeMs}ms ease-in;
-  }
-
-  &:active {
-    transform: scale(90%);
-    transition: all ${navigationButtonActiveAnimationTimeMs}ms ease-in;
-  }
 `
 
 //Component Props & Export

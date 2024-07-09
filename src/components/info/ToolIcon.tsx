@@ -1,26 +1,13 @@
 import React from "react"
 import styled from "styled-components"
-
-// Animation Constants
-
-const iconHoverOverAnimationTimeMs = 100
-const iconActiveAnimationTimeMs = 70
+import { BouncyClickAnimationsCSS } from "../StyledComponents"
 
 // Styled Components
 
 const ToolIconContainerStyledDiv = styled.div`
+  ${BouncyClickAnimationsCSS}
+
   text-align: center;
-  transition: all ${iconHoverOverAnimationTimeMs}ms ease-in;
-
-  &:hover {
-    transform: scale(110%);
-    transition: all ${iconHoverOverAnimationTimeMs}ms ease-in;
-  }
-
-  &:active {
-    transform: scale(90%);
-    transition: all ${iconActiveAnimationTimeMs}ms ease-in;
-  }
 `
 
 const ToolIconStyledImg = styled.img`
