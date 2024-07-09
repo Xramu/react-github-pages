@@ -18,6 +18,7 @@ export const PageInlineCenterStyledDiv = styled.div`
 // Images
 
 export const FlexToFitStyledImg = styled.img`
-  width: 100%;
-  object-fit: scale-down;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
 `

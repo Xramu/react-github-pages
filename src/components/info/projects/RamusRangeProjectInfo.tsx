@@ -84,11 +84,11 @@ function RamusRangeProjectInfo() {
       </ProjectSummary>
 
       <ProjectMediaPreview>
+        <FlexToFitStyledImg src={MahiroImage} alt="Picture of Mahiro" />
         <FlexToFitStyledImg
           src={RamusRangeBanner}
           alt="Banner of Ramu's Gun Range"
         />
-        <FlexToFitStyledImg src={MahiroImage} alt="Picture of Mahiro" />
       </ProjectMediaPreview>
 
       <ProjectInfoDropdownBox
