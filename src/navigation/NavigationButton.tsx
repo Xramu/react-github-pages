@@ -4,6 +4,7 @@ import styled from "styled-components"
 // Animation Constants
 
 const navigationButtonHoverAnimationTimeMs = 100
+const navigationButtonActiveAnimationTimeMs = 70
 
 // Styled Components
 
@@ -20,12 +21,17 @@ const NavigationStyledButton = styled.button`
   display: inline-flex;
   font-size: calc(10px + 2vmin);
 
+  transition: all ${navigationButtonHoverAnimationTimeMs}ms ease-in;
+
   &:hover {
     transform: scale(110%);
     transition: all ${navigationButtonHoverAnimationTimeMs}ms ease-in;
   }
 
-  transition: all ${navigationButtonHoverAnimationTimeMs}ms ease-in;
+  &:active {
+    transform: scale(90%);
+    transition: all ${navigationButtonActiveAnimationTimeMs}ms ease-in;
+  }
 `
 
 //Component Props & Export
