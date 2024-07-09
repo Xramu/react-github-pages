@@ -15,13 +15,15 @@ export const PageInlineCenterStyledDiv = styled.div`
   align-content: center;
   justify-content: center;
 `
-// Images
 
-export const FlexToFitStyledImg = styled.img`
+// Media Previews
+
+export const MediaPreviewMediaItemCSS = css`
   max-width: 100%;
   max-height: 100%;
   margin: auto;
 `
+
 // Animations
 
 const hoverEnterAnimationTime = 100

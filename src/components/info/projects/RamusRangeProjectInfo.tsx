@@ -5,7 +5,7 @@ import { StringReactNodePair } from "../../../utils/Types"
 import ProjectTitle from "../ProjectTitle"
 import ProjectSummary from "../ProjectSummary"
 import ProjectMediaPreview from "../ProjectMediaPreview"
-import { FlexToFitStyledImg } from "../../StyledComponents"
+import ProjectImage from "../ProjectImage"
 
 // Info Tabs of this project
 
@@ -84,11 +84,8 @@ function RamusRangeProjectInfo() {
       </ProjectSummary>
 
       <ProjectMediaPreview>
-        <FlexToFitStyledImg src={MahiroImage} alt="Picture of Mahiro" />
-        <FlexToFitStyledImg
-          src={RamusRangeBanner}
-          alt="Banner of Ramu's Gun Range"
-        />
+        <ProjectImage src={MahiroImage} alt="Picture of Mahiro" />
+        <ProjectImage src={RamusRangeBanner} alt="Banner of Ramu's Gun Range" />
       </ProjectMediaPreview>
 
       <ProjectInfoDropdownBox
