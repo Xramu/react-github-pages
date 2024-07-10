@@ -1,6 +1,6 @@
 import React, { ComponentPropsWithoutRef } from "react"
 import styled from "styled-components"
-import { MediaPreviewMediaItemCSS } from "../StyledComponents"
+import { MediaPreviewMediaItemCSS } from "./StyledComponents"
 
 // Styled Components
 
@@ -12,7 +12,7 @@ const ProjectStyledImage = styled.img`
 
 type ProjectImageProps = ComponentPropsWithoutRef<"img"> & {}
 
-function ProjectImage(props: ProjectImageProps) {
+function MediaPreviewImageItem(props: ProjectImageProps) {
   return (
     <ProjectStyledImage
       {...props}
@@ -21,4 +21,4 @@ function ProjectImage(props: ProjectImageProps) {
   )
 }
 
-export default ProjectImage
+export default MediaPreviewImageItem

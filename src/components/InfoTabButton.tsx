@@ -20,11 +20,11 @@ const StyledInfoButton = styled.button`
     border-bottom: solid 2px var(--primary-text-color);
     color: var(--primary-text-color);
     background-color: #00000000;
-    transition: all var(--info-tab-button-animation-speed) ease-in;
+    transition: border var(--info-tab-button-animation-speed) ease-in;
 
     &:hover {
       border-bottom: solid 4px var(--primary-text-color);
-      transition: all var(--info-tab-button-animation-speed) ease-in;
+      transition: border var(--info-tab-button-animation-speed) ease-in;
     }
   }
 
@@ -37,7 +37,7 @@ const StyledInfoButton = styled.button`
     border-bottom: solid 4px var(--primary-color);
     color: var(--primary-text-color);
     background-color: #00000000;
-    transition: all var(--info-tab-button-animation-speed) ease-in;
+    transition: border var(--info-tab-button-animation-speed) ease-in;
   }
 `
 

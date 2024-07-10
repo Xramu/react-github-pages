@@ -4,13 +4,13 @@ import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md"
 import { CSSTransition, SwitchTransition } from "react-transition-group"
 
 /* TODO: 
-  Make sliding direction on the media preview instantly go the right direction. Currently it lags one state behind.
+  Make media slide from the correct slide instead of appearing/disappearing.
   Use a loading throbber for media that has not loaded yet.
 */
 
 // Animation Constants
 
-const mediaItemSlideAnimationTime = 200
+const mediaItemSwitchAnimationTime = 300
 
 const arrowButtonHoverAnimationTimeMs = 150
 const arrowButtonActiveAnimationTimeMs = 70
@@ -22,7 +22,6 @@ const MediaPreviewContainerStyledDiv = styled.div`
   overflow: hidden;
   background-color: var(--media-background-color);
   border: solid 4px;
-  border-radius: 4px;
   display: flex;
   width: 70cqi;
   height: 40cqi;
@@ -80,31 +79,27 @@ const MediaNavigationStyledButton = styled.button<{
 
 const mediaItemTransitionName = "media-item-transition"
 
-const MediaItemStyledDiv = styled.div<{ $slideLeft: boolean }>`
+const MediaItemStyledDiv = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
 
   &.${mediaItemTransitionName}-enter {
-    opacity: 0.01;
-    translate: ${(props) => (props.$slideLeft ? "-" : "")}110% 0%;
+    opacity: 0;
   }
 
   &.${mediaItemTransitionName}-enter-active {
     opacity: 1;
-    translate: 0% 0%;
-    transition: all ${mediaItemSlideAnimationTime}ms ease-out;
+    transition: all ${mediaItemSwitchAnimationTime}ms ease-out;
   }
 
   &.${mediaItemTransitionName}-exit {
     opacity: 1;
-    translate: 0% 0%;
   }
 
   &.${mediaItemTransitionName}-exit-active {
-    opacity: 0.01;
-    translate: ${(props) => (props.$slideLeft ? "" : "-")}110% 0%;
-    transition: all ${mediaItemSlideAnimationTime}ms ease-out;
+    opacity: 0;
+    transition: all ${mediaItemSwitchAnimationTime}ms ease-out;
   }
 `
 
@@ -113,6 +108,7 @@ const MediaItemStyledDiv = styled.div<{ $slideLeft: boolean }>`
 function LeftArrowButton(props: { onClick: () => void }) {
   return (
     <MediaNavigationStyledButton
+      style={{ float: "left" }}
       onClick={props.onClick}
       $gradientDirection="to right"
     >
@@ -124,6 +120,7 @@ function LeftArrowButton(props: { onClick: () => void }) {
 function RightArrowButton(props: { onClick: () => void }) {
   return (
     <MediaNavigationStyledButton
+      style={{ float: "right" }}
       onClick={props.onClick}
       $gradientDirection="to left"
     >
@@ -172,15 +169,12 @@ function ProjectMediaPreview({ children }: ProjectMediaPreviewProps) {
       <MediaCenterStyledDiv>
         <SwitchTransition>
           <CSSTransition
-            timeout={mediaItemSlideAnimationTime}
+            timeout={mediaItemSwitchAnimationTime}
             key={imageIdState.id}
             nodeRef={mediaItemDivRef}
             classNames={mediaItemTransitionName}
           >
-            <MediaItemStyledDiv
-              $slideLeft={imageIdState.slidLeftLast}
-              ref={mediaItemDivRef}
-            >
+            <MediaItemStyledDiv ref={mediaItemDivRef}>
               {mediaNodes[imageIdState.id]}
             </MediaItemStyledDiv>
           </CSSTransition>
