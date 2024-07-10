@@ -3,9 +3,9 @@ import ProjectInfoDropdownBox from "../ProjectInfoDropdownBox"
 import { StringReactNodePair } from "../../../utils/Types"
 import ProjectTitle from "../ProjectTitle"
 import ProjectSummary from "../ProjectSummary"
-import MediaPreview from "../../MediaPreview"
-import MediaPreviewImageItem from "../../MediaPreviewImageItem"
-import MediaPreviewYoutubeItem from "../../MediaPreviewYoutubeItem"
+import MediaPreview from "../../media/MediaPreview"
+import MediaPreviewImageItem from "../../media/MediaPreviewImageItem"
+import MediaPreviewYoutubeItem from "../../media/MediaPreviewYoutubeItem"
 
 // Project Videos
 
@@ -96,7 +96,7 @@ function RamusRangeProjectInfo() {
           alt="Banner of Ramu's Gun Range"
         />
         {projectVideoUrlStrings.map((urlString) => (
-          <MediaPreviewYoutubeItem url={new URL(urlString)} />
+          <MediaPreviewYoutubeItem key={urlString} url={new URL(urlString)} />
         ))}
       </MediaPreview>
 

@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { MediaPreviewMediaItemCSS } from "./StyledComponents"
+import { MediaPreviewMediaItemCSS } from "../StyledComponents"
 
 // Styled Components
 
@@ -21,7 +21,7 @@ function MediaPreviewYoutubeItem({ url }: MediaPreviewYoutubeItemProps) {
   return (
     <EmbedYoutubeVideoStyledIFrame
       src={url.toString()}
-      title="YouTube video player"
+      title="YouTube Video Player"
       allowFullScreen
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
     />

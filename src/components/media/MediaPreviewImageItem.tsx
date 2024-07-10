@@ -1,6 +1,6 @@
 import React, { ComponentPropsWithoutRef } from "react"
 import styled from "styled-components"
-import { MediaPreviewMediaItemCSS } from "./StyledComponents"
+import { MediaPreviewMediaItemCSS } from "../StyledComponents"
 
 // Styled Components
 

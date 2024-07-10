@@ -1,7 +1,11 @@
 import React, { Children, ReactNode, useRef, useState } from "react"
 import styled from "styled-components"
-import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md"
 import { CSSTransition, SwitchTransition } from "react-transition-group"
+import {
+  MediaPreviewLeftNavigationButton,
+  MediaPreviewRightNavigationButton,
+} from "./MediaPreviewNavigationButtons"
+import MediaPreviewNavigationBar from "./MediaPreviewNavigationBar"
 
 /* TODO: 
   Make media slide from the correct slide instead of appearing/disappearing.
@@ -11,9 +15,6 @@ import { CSSTransition, SwitchTransition } from "react-transition-group"
 // Animation Constants
 
 const mediaItemSwitchAnimationTime = 300
-
-const arrowButtonHoverAnimationTimeMs = 150
-const arrowButtonActiveAnimationTimeMs = 70
 
 // Styled Components
 
@@ -30,51 +31,7 @@ const MediaPreviewContainerStyledDiv = styled.div`
 const MediaCenterStyledDiv = styled.div`
   width: 90%;
   display: flex;
-  margin: auto;
-`
-
-const buttonIconClassName = "button-icon"
-
-type GradientDirection = "to right" | "to left"
-
-const MediaNavigationStyledButton = styled.button<{
-  $gradientDirection: GradientDirection
-}>`
-  cursor: pointer;
-  color: white;
-  background-color: #00000000;
-  border: none;
-  height: 100%;
-  width: 10%;
-
-  transition: all ${arrowButtonHoverAnimationTimeMs}ms ease-in;
-
-  .${buttonIconClassName} {
-    color: #ffffff55;
-    width: 50%;
-    height: auto;
-    transition: all ${arrowButtonHoverAnimationTimeMs}ms ease-in;
-  }
-
-  &:hover {
-    background-image: linear-gradient(
-      ${(props) => props.$gradientDirection},
-      #ffffff33,
-      #00000000
-    );
-    transition: all ${arrowButtonHoverAnimationTimeMs}ms ease-in;
-  }
-
-  &:hover > .${buttonIconClassName} {
-    color: #ffffffff;
-    transform: scale(110%);
-    transition: all ${arrowButtonHoverAnimationTimeMs}ms ease-in;
-  }
-
-  &:active > .${buttonIconClassName} {
-    transform: scale(100%);
-    transition: all ${arrowButtonActiveAnimationTimeMs}ms ease-in;
-  }
+  flex-direction: column;
 `
 
 const mediaItemTransitionName = "media-item-transition"
@@ -104,30 +61,6 @@ const MediaItemStyledDiv = styled.div`
 `
 
 // Component Props & Export
-
-function LeftArrowButton(props: { onClick: () => void }) {
-  return (
-    <MediaNavigationStyledButton
-      style={{ float: "left" }}
-      onClick={props.onClick}
-      $gradientDirection="to right"
-    >
-      <MdArrowBackIos className={buttonIconClassName} />
-    </MediaNavigationStyledButton>
-  )
-}
-
-function RightArrowButton(props: { onClick: () => void }) {
-  return (
-    <MediaNavigationStyledButton
-      style={{ float: "right" }}
-      onClick={props.onClick}
-      $gradientDirection="to left"
-    >
-      <MdArrowForwardIos className={buttonIconClassName} />
-    </MediaNavigationStyledButton>
-  )
-}
 
 type ProjectMediaPreviewProps = {
   children: ReactNode
@@ -163,9 +96,13 @@ function ProjectMediaPreview({ children }: ProjectMediaPreviewProps) {
     }))
   }
 
+  function onPressNavigationButton(selectedItem: number) {
+    setImageIdState({ ...imageIdState, id: selectedItem })
+  }
+
   return (
     <MediaPreviewContainerStyledDiv>
-      <LeftArrowButton onClick={onPressLeftArrow} />
+      <MediaPreviewLeftNavigationButton onClick={onPressLeftArrow} />
 
       <MediaCenterStyledDiv>
         <SwitchTransition>
@@ -180,9 +117,14 @@ function ProjectMediaPreview({ children }: ProjectMediaPreviewProps) {
             </MediaItemStyledDiv>
           </CSSTransition>
         </SwitchTransition>
+        <MediaPreviewNavigationBar
+          onItemSelected={onPressNavigationButton}
+          itemAmount={mediaNodes.length}
+          currentlySelectedItem={imageIdState.id}
+        />
       </MediaCenterStyledDiv>
 
-      <RightArrowButton onClick={onPressRightArrow} />
+      <MediaPreviewRightNavigationButton onClick={onPressRightArrow} />
     </MediaPreviewContainerStyledDiv>
   )
 }
