@@ -166,6 +166,7 @@ function ProjectMediaPreview({ children }: ProjectMediaPreviewProps) {
   return (
     <MediaPreviewContainerStyledDiv>
       <LeftArrowButton onClick={onPressLeftArrow} />
+
       <MediaCenterStyledDiv>
         <SwitchTransition>
           <CSSTransition
@@ -180,6 +181,7 @@ function ProjectMediaPreview({ children }: ProjectMediaPreviewProps) {
           </CSSTransition>
         </SwitchTransition>
       </MediaCenterStyledDiv>
+
       <RightArrowButton onClick={onPressRightArrow} />
     </MediaPreviewContainerStyledDiv>
   )

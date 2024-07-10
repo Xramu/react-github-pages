@@ -1,11 +1,18 @@
 import RamusRangeBanner from "../../../img/ramus_range/RamusRangeBanner.jpg"
-import MahiroImage from "../../../img/mahiro.png"
 import ProjectInfoDropdownBox from "../ProjectInfoDropdownBox"
 import { StringReactNodePair } from "../../../utils/Types"
 import ProjectTitle from "../ProjectTitle"
 import ProjectSummary from "../ProjectSummary"
 import MediaPreview from "../../MediaPreview"
 import MediaPreviewImageItem from "../../MediaPreviewImageItem"
+import MediaPreviewYoutubeItem from "../../MediaPreviewYoutubeItem"
+
+// Project Videos
+
+const projectVideoUrlStrings = [
+  "https://www.youtube.com/embed/PiHyEHoeFao?si=Gwx9oMGYv4x3O2H5",
+  "https://www.youtube.com/embed/SmYlYPNIFCQ?si=CBqLcSLthYP1k4_k",
+]
 
 // Info Tabs of this project
 
@@ -88,7 +95,9 @@ function RamusRangeProjectInfo() {
           src={RamusRangeBanner}
           alt="Banner of Ramu's Gun Range"
         />
-        <MediaPreviewImageItem src={MahiroImage} alt="Picture of Mahiro" />
+        {projectVideoUrlStrings.map((urlString) => (
+          <MediaPreviewYoutubeItem url={new URL(urlString)} />
+        ))}
       </MediaPreview>
 
       <ProjectInfoDropdownBox
