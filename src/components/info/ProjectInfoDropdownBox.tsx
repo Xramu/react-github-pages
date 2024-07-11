@@ -17,6 +17,7 @@ const MainContainerDiv = styled.div`
 
 const ButtonRowContainerDiv = styled.div`
   display: flex;
+  flex-wrap: wrap;
   column-gap: 20px;
 `
 
