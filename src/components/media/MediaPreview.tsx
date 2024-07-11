@@ -28,8 +28,9 @@ const MediaPreviewContainerStyledDiv = styled.div`
     var(--media-background-color-outside)
   );
   border: solid 4px;
+  border-radius: 0.5rem;
   display: flex;
-  aspect-ratio: 16/7;
+  aspect-ratio: 16/7.5;
   width: 100%;
 `
 
@@ -50,19 +51,23 @@ const MediaItemStyledDiv = styled.div`
 
   &.${mediaItemTransitionName}-enter {
     opacity: 0;
+    transform: scale(50%);
   }
 
   &.${mediaItemTransitionName}-enter-active {
     opacity: 1;
+    transform: scale(100%);
     transition: all ${mediaItemSwitchAnimationTime}ms ease-out;
   }
 
   &.${mediaItemTransitionName}-exit {
     opacity: 1;
+    transform: scale(100%);
   }
 
   &.${mediaItemTransitionName}-exit-active {
     opacity: 0;
+    transform: scale(50%);
     transition: all ${mediaItemSwitchAnimationTime}ms ease-out;
   }
 `

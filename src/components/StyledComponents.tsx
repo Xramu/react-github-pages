@@ -27,6 +27,7 @@ export const PageInlineCenterStyledDiv = styled.div`
 
 export const MediaPreviewMediaItemCSS = css`
   ${BasicBoxShadowCSS}
+  border-radius: 0.5rem;
   max-width: 100%;
   max-height: 100%;
   margin: auto;
