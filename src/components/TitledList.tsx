@@ -1,4 +1,11 @@
 import React, { ReactNode } from "react"
+import styled from "styled-components"
+
+// Styled Components
+
+const TitledListStyledDiv = styled.div``
+
+// Component Props & Export
 
 type TitledListProps = {
   title?: string
@@ -13,10 +20,10 @@ function createListFromNodes(listItems: ReactNode[]): ReactNode {
 
 function TitledList({ title, listItems }: TitledListProps) {
   return (
-    <div className="Page-inline-list">
+    <TitledListStyledDiv>
       {title && <h3>{title}</h3>}
       {createListFromNodes(listItems)}
-    </div>
+    </TitledListStyledDiv>
   )
 }
 

@@ -10,7 +10,6 @@ import styled from "styled-components"
 // Styled Components
 
 const PageStyledDiv = styled.div`
-  font-size: max(5px, 2.5vmin);
   display: flex;
   justify-content: center;
   text-align: left;

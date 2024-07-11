@@ -5,7 +5,7 @@ import HorizontalLine from "../HorizontalLine"
 import TitledList from "../TitledList"
 import {
   PageInlineCenterStyledDiv,
-  PageInlineSpaceBetweenStyledDiv,
+  PageInlineSpaceBetweenWrapStyledDiv,
 } from "../StyledComponents"
 
 // Styled Components
@@ -137,7 +137,7 @@ function PersonalInfo() {
 
       <h2>What I Am Familiar With</h2>
 
-      <PageInlineSpaceBetweenStyledDiv>
+      <PageInlineSpaceBetweenWrapStyledDiv>
         <TitledList
           title="Programming Languages"
           listItems={[
@@ -170,7 +170,7 @@ function PersonalInfo() {
             "Keeping code readable and commented",
           ]}
         />
-      </PageInlineSpaceBetweenStyledDiv>
+      </PageInlineSpaceBetweenWrapStyledDiv>
 
       <HorizontalLine />
 

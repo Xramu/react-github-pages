@@ -16,7 +16,7 @@ const NavigationStyledButton = styled.button`
   text-align: center;
   text-decoration: none;
   display: inline-flex;
-  font-size: calc(10px + 2vmin);
+  font-size: var(--navigation-font-size);
 `
 
 //Component Props & Export

@@ -10,6 +10,9 @@
   /* Fonts */
   --primary-font-family: monospace;
 
+  --primary-font-size: 1.2rem;
+  --navigation-font-size: 2rem;
+
   /* Animation Times */
   --info-tab-button-animation-speed: 100ms;
   --info-box-content-animation-speed: 300ms;

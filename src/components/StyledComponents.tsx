@@ -4,10 +4,11 @@ import styled, { css } from "styled-components"
 
 // Divisions
 
-export const PageInlineSpaceBetweenStyledDiv = styled.div`
+export const PageInlineSpaceBetweenWrapStyledDiv = styled.div`
   display: flex;
   align-content: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 `
 
 export const PageInlineCenterStyledDiv = styled.div`

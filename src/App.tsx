@@ -12,7 +12,7 @@ const AppStyledDiv = styled.div`
   background-color: var(--background-color);
   min-height: 100vh;
   flex-direction: column;
-  font-size: calc(10px + 2vmin);
+  font-size: var(--primary-font-size);
   color: var(--primary-text-color);
 `
 
