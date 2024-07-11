@@ -2,29 +2,14 @@ import React from "react"
 import colors from "../utils/variables/css/ColorVariables.json"
 import { SocialIcon } from "react-social-icons"
 import styled from "styled-components"
-
-// Animation Constants
-
-const socialIconHoverAnimationTimeMs = 100
-const socialIconActiveAnimationTimeMs = 70
+import { BouncyClickAnimationsCSS } from "./StyledComponents"
 
 // Styled Components
 
 const StyledSocialIcon = styled(SocialIcon)`
+  ${BouncyClickAnimationsCSS}
   display: flex !important;
   margin: 5px 5px;
-
-  transition: all ${socialIconHoverAnimationTimeMs}ms ease-in;
-
-  &:hover {
-    transform: scale(110%);
-    transition: all ${socialIconHoverAnimationTimeMs}ms ease-in;
-  }
-
-  &:active {
-    transform: scale(90%);
-    transition: all ${socialIconActiveAnimationTimeMs}ms ease-in;
-  }
 `
 
 // Component Props & Export
