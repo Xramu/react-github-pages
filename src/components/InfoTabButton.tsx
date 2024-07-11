@@ -15,7 +15,6 @@ const StyledInfoButton = styled.button`
   margin: 10px 0px 0px 0px;
   border: none;
   border-bottom: solid 2px var(--color-text-primary);
-  color: var(--color-text-primary);
   background-color: #00000000;
 
   transition: border var(--info-tab-button-animation-speed) ease-in;

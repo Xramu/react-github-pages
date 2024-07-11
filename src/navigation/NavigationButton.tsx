@@ -11,7 +11,6 @@ const NavigationStyledButton = styled.button`
   cursor: pointer;
   background-color: #00000000;
   border: none;
-  color: var(--color-text-primary);
   padding: 5px 30px;
   text-align: center;
   text-decoration: none;
