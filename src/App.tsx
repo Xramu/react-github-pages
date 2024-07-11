@@ -1,6 +1,6 @@
 import React from "react"
 import "./styles/App.css"
-import colors from "./utils/Colors.json"
+import colors from "./utils/variables/css/ColorVariables.json"
 import Navigation from "./navigation/Navigation"
 import styled from "styled-components"
 

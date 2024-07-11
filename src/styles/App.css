@@ -1,4 +1,5 @@
 :root {
+  /* Colors (Please Update)*/
   --primary-color: #aa478c;
   --secondary-color: #481e3b;
   --background-color: #282c34;
@@ -6,8 +7,10 @@
   --primary-text-color: white;
   --media-background-color: #222222;
 
+  /* Fonts */
   --primary-font-family: monospace;
 
+  /* Animation Times */
   --info-tab-button-animation-speed: 100ms;
   --info-box-content-animation-speed: 300ms;
 }

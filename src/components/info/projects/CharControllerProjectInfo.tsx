@@ -4,7 +4,7 @@ import ProjectInfoDropdownBox from "../ProjectInfoDropdownBox"
 import { StringReactNodePair } from "../../../utils/Types"
 import ProjectSummary from "../ProjectSummary"
 import SocialButton from "../../SocialButton"
-import colors from "../../../utils/Colors.json"
+import colors from "../../../utils/variables/css/ColorVariables.json"
 
 const detailsInfoSet: StringReactNodePair = {
   string: "Details",

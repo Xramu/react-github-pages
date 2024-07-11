@@ -1,5 +1,5 @@
 import React from "react"
-import colors from "../utils/Colors.json"
+import colors from "../utils/variables/css/ColorVariables.json"
 import { SocialIcon } from "react-social-icons"
 import styled from "styled-components"
 
