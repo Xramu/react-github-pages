@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.869cd7eb.css",
-    "main.js": "/static/js/main.3e5ca094.js",
+    "main.css": "/static/css/main.9ab6bf57.css",
+    "main.js": "/static/js/main.c34bd94f.js",
     "static/js/787.7cf6c855.chunk.js": "/static/js/787.7cf6c855.chunk.js",
     "static/media/RamusRangeBanner.jpg": "/static/media/RamusRangeBanner.580d16fa0a3ebae28757.jpg",
     "static/media/mahiro.png": "/static/media/mahiro.3f16aefbe6a54e3750cf.png",
     "index.html": "/index.html",
-    "main.869cd7eb.css.map": "/static/css/main.869cd7eb.css.map",
-    "main.3e5ca094.js.map": "/static/js/main.3e5ca094.js.map",
+    "main.9ab6bf57.css.map": "/static/css/main.9ab6bf57.css.map",
+    "main.c34bd94f.js.map": "/static/js/main.c34bd94f.js.map",
     "787.7cf6c855.chunk.js.map": "/static/js/787.7cf6c855.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.869cd7eb.css",
-    "static/js/main.3e5ca094.js"
+    "static/css/main.9ab6bf57.css",
+    "static/js/main.c34bd94f.js"
   ]
 }
