@@ -2,6 +2,12 @@ import styled, { css } from "styled-components"
 
 /* File for shared styling between different components */
 
+// Generic Styled CSS
+
+export const BasicBoxShadowCSS = css`
+  box-shadow: 5px 5px 5px var(--primary-box-shadow-color);
+`
+
 // Divisions
 
 export const PageInlineSpaceBetweenWrapStyledDiv = styled.div`
@@ -20,12 +26,13 @@ export const PageInlineCenterStyledDiv = styled.div`
 // Media Previews
 
 export const MediaPreviewMediaItemCSS = css`
+  ${BasicBoxShadowCSS}
   max-width: 100%;
   max-height: 100%;
   margin: auto;
 `
 
-// Animations
+// Animations CSS
 
 const hoverEnterAnimationTime = 100
 const activeEnterAnimationTime = 70

@@ -12,7 +12,8 @@ const dotHoverAnimationTimeMs = 100
 const MediaPreviewNavigationBarStyledDiv = styled.div`
   display: flex;
   justify-content: center;
-  height: 10%;
+  align-items: center;
+  height: 15%;
 `
 
 const selectedDotClassName = "selected-navigation-dot"
@@ -21,6 +22,7 @@ const MediaPreviewNavigationStyledDot = styled(MdCircle)`
   ${BouncyClickAnimationsCSS}
   cursor: pointer;
   color: #ffffff33;
+  font-size: 2cqi;
 
   &.${selectedDotClassName} {
     color: #ffffff88;

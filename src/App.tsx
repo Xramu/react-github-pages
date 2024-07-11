@@ -37,7 +37,18 @@ function SetUpColors() {
   SetStyleProperty("--secondary-color", colors["secondary-color"])
   SetStyleProperty("--background-color", colors["background-color"])
   SetStyleProperty("--primary-text-color", colors["primary-text-color"])
-  SetStyleProperty("--media-background-color", colors["media-background-color"])
+  SetStyleProperty(
+    "--media-background-color-center",
+    colors["media-background-color-center"],
+  )
+  SetStyleProperty(
+    "--media-background-color-outside",
+    colors["media-background-color-outside"],
+  )
+  SetStyleProperty(
+    "--primary-box-shadow-color",
+    colors["primary-box-shadow-color"],
+  )
 }
 
 // Component Export

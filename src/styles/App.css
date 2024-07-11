@@ -5,7 +5,9 @@
   --background-color: #282c34;
 
   --primary-text-color: white;
-  --media-background-color: #222222;
+  --media-background-color-center: #282828;
+  --media-background-color-outside: #222222;
+  --primary-box-shadow-color: #161616;
 
   /* Fonts */
   --primary-font-family: monospace;

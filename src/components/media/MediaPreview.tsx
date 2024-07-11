@@ -6,6 +6,7 @@ import {
   MediaPreviewRightNavigationButton,
 } from "./MediaPreviewNavigationButtons"
 import MediaPreviewNavigationBar from "./MediaPreviewNavigationBar"
+import { BasicBoxShadowCSS } from "../StyledComponents"
 
 /* TODO: 
   Make media slide from the correct slide instead of appearing/disappearing.
@@ -19,17 +20,23 @@ const mediaItemSwitchAnimationTime = 300
 // Styled Components
 
 const MediaPreviewContainerStyledDiv = styled.div`
+  ${BasicBoxShadowCSS}
   margin: auto;
   overflow: hidden;
-  background-color: var(--media-background-color);
+  background-image: radial-gradient(
+    var(--media-background-color-center),
+    var(--media-background-color-outside)
+  );
   border: solid 4px;
   display: flex;
-  width: 70cqi;
-  height: 40cqi;
+  aspect-ratio: 16/7;
+  width: 100%;
 `
 
 const MediaCenterStyledDiv = styled.div`
-  width: 90%;
+  padding: 1rem;
+  padding-bottom: 0;
+  width: 80%;
   display: flex;
   flex-direction: column;
 `
@@ -39,7 +46,7 @@ const mediaItemTransitionName = "media-item-transition"
 const MediaItemStyledDiv = styled.div`
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 85%;
 
   &.${mediaItemTransitionName}-enter {
     opacity: 0;
