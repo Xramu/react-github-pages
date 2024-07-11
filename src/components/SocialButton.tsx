@@ -20,8 +20,8 @@ type SocialButtonProps = {
 }
 
 function SocialButton({ url, fgColor, bgColor }: SocialButtonProps) {
-  fgColor = fgColor || "var(--color-text-primary)"
-  bgColor = bgColor || "var(--color-secondary)"
+  fgColor = fgColor || "var(--color-primary)"
+  bgColor = bgColor || "var(--color-text-primary)"
 
   return (
     <StyledSocialIcon
