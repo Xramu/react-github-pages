@@ -5,11 +5,7 @@ type ProjectTitleProps = ComponentPropsWithoutRef<"h2"> & {
 }
 
 function ProjectTitle({ children, ...rest }: ProjectTitleProps) {
-  return (
-    <h2 {...rest}>
-      <u>{children ? children : "No Title"}</u>
-    </h2>
-  )
+  return <h2 {...rest}>{children ? children : "No Title"}</h2>
 }
 
 export default ProjectTitle
