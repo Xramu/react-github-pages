@@ -24,7 +24,7 @@ const ButtonRowContainerDiv = styled.div`
 const BottomContainerDiv = styled.div`
   margin-top: 10px;
   padding-left: 20px;
-  border-left: solid 4px var(--primary-color);
+  border-left: solid 4px var(--color-primary);
   overflow: hidden;
 `
 

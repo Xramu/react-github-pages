@@ -1,5 +1,4 @@
 import React from "react"
-import colors from "../utils/variables/css/ColorVariables.json"
 import { SocialIcon } from "react-social-icons"
 import styled from "styled-components"
 import { BouncyClickAnimationsCSS } from "./StyledComponents"
@@ -21,8 +20,8 @@ type SocialButtonProps = {
 }
 
 function SocialButton({ url, fgColor, bgColor }: SocialButtonProps) {
-  fgColor = fgColor || colors["primary-text-color"]
-  bgColor = bgColor || colors["secondary-color"]
+  fgColor = fgColor || "var(--color-text-primary)"
+  bgColor = bgColor || "var(--color-secondary)"
 
   return (
     <StyledSocialIcon

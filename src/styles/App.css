@@ -1,19 +1,23 @@
 :root {
   /* Colors (Please Update)*/
-  --primary-color: #aa478c;
-  --secondary-color: #481e3b;
-  --background-color: #282c34;
+  --color-primary: hsl(318, 25%, 52%);
+  --color-secondary: hsl(318, 25%, 32%);
+  --color-text-primary: white;
+  --color-background: hsl(220, 13%, 18%);
 
-  --primary-text-color: white;
-  --media-background-color-center: #282828;
-  --media-background-color-outside: #222222;
-  --primary-box-shadow-color: #161616;
+  --color-link: var(--color-primary);
+  --color-link-visited: hsl(318, 25%, 62%);
+
+  --color-media-background-gradient-first: hsl(0, 0%, 16%);
+  --color-media-background-gradient-second: hsl(0, 0%, 13%);
+  --color-shadow-primary: hsl(0, 0%, 10%);
 
   /* Fonts */
-  --primary-font-family: monospace;
+  --font-family-primary: monospace;
 
-  --primary-font-size: 1.2rem;
-  --navigation-font-size: 2rem;
+  --font-size-primary: 1.2rem;
+  --font-size-small: 0.8rem;
+  --font-size-navigation-button: 2rem;
 
   /* Animation Times */
   --info-tab-button-animation-speed: 100ms;
@@ -21,14 +25,14 @@
 }
 
 :link {
-  color: var(--primary-color);
+  color: var(--color-link);
 }
 
 :visited {
-  color: #d2b8ca;
+  color: var(--color-link-visited);
 }
 
 button {
-  font-family: var(--primary-font-family);
-  font-size: var(--primary-font-size);
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-primary);
 }

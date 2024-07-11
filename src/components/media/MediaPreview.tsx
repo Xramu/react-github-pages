@@ -24,8 +24,8 @@ const MediaPreviewContainerStyledDiv = styled.div`
   margin: auto;
   overflow: hidden;
   background-image: radial-gradient(
-    var(--media-background-color-center),
-    var(--media-background-color-outside)
+    var(--color-media-background-gradient-first),
+    var(--color-media-background-gradient-second)
   );
   border: solid 4px;
   border-radius: 0.5rem;

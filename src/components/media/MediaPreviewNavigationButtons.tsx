@@ -13,7 +13,6 @@ const MediaNavigationStyledButton = styled.button<{
   $gradientDirection: GradientDirection
 }>`
   cursor: pointer;
-  color: white;
   background-color: #00000000;
   border: none;
   height: 100%;

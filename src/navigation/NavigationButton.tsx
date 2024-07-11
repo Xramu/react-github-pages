@@ -11,12 +11,12 @@ const NavigationStyledButton = styled.button`
   cursor: pointer;
   background-color: #00000000;
   border: none;
-  color: var(--primary-text-color);
+  color: var(--color-text-primary);
   padding: 5px 30px;
   text-align: center;
   text-decoration: none;
   display: inline-flex;
-  font-size: var(--navigation-font-size);
+  font-size: var(--font-size-navigation-button);
 `
 
 //Component Props & Export

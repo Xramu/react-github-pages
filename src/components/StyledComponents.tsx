@@ -5,7 +5,7 @@ import styled, { css } from "styled-components"
 // Generic Styled CSS
 
 export const BasicBoxShadowCSS = css`
-  box-shadow: 5px 5px 5px var(--primary-box-shadow-color);
+  box-shadow: 5px 5px 5px var(--color-shadow-primary);
 `
 
 // Divisions

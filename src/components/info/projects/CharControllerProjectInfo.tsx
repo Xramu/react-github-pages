@@ -4,7 +4,6 @@ import ProjectInfoDropdownBox from "../ProjectInfoDropdownBox"
 import { StringReactNodePair } from "../../../utils/Types"
 import ProjectSummary from "../ProjectSummary"
 import SocialButton from "../../SocialButton"
-import colors from "../../../utils/variables/css/ColorVariables.json"
 
 const detailsInfoSet: StringReactNodePair = {
   string: "Details",
@@ -82,8 +81,8 @@ function CharControllerProjectInfo() {
       </ProjectTitle>
 
       <SocialButton
-        fgColor={colors["primary-text-color"]}
-        bgColor={colors["primary-color"]}
+        fgColor={"var(--color-text-primary)"}
+        bgColor={"var(--color-primary)"}
         url="https://github.com/Xramu/Player-Controller-Demo"
       />
 

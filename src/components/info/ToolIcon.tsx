@@ -17,7 +17,7 @@ const ToolIconStyledImg = styled.img`
 `
 
 const ToolIconTextStyledP = styled.p`
-  font-size: calc(5px + 1vmin);
+  font-size: var(--font-size-small);
   text-align: center;
   margin: 0px 0.5vmin;
   margin-bottom: 0.5vmin;

@@ -8,9 +8,9 @@ import styled from "styled-components"
 // Styled Components
 
 const NavigationBarStyledDiv = styled.div`
-  box-shadow: 0px 5px 5px var(--primary-box-shadow-color);
+  box-shadow: 0px 5px 5px var(--color-shadow-primary);
   overflow: hidden;
-  background-color: var(--primary-color);
+  background-color: var(--color-primary);
   display: flex;
   flex-direction: row;
   justify-content: space-between;

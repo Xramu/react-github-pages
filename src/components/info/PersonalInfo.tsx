@@ -8,8 +8,6 @@ import {
   PageInlineSpaceBetweenWrapStyledDiv,
 } from "../StyledComponents"
 
-// Styled Components
-
 // Languages/Tools Row Functions
 
 function getLanguagesRow() {
