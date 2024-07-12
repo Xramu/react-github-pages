@@ -31,6 +31,9 @@
   /* Animation Times */
   --info-tab-button-animation-speed: 100ms;
   --info-box-content-animation-speed: 300ms;
+
+  /* Constants */
+  --margin-page-vertical-primary: 1rem;
 }
 
 :link {

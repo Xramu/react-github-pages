@@ -19,6 +19,7 @@ export const PageInlineSpaceBetweenWrapStyledDiv = styled.div`
 
 export const PageInlineCenterStyledDiv = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-content: center;
   justify-content: center;
 `

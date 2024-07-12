@@ -6,18 +6,17 @@ import { BouncyClickAnimationsCSS } from "../StyledComponents"
 
 const ToolIconContainerStyledDiv = styled.div`
   ${BouncyClickAnimationsCSS}
-
+  margin: 0.5rem;
   text-align: center;
 `
 
 const ToolIconStyledImg = styled.img`
-  margin: 0.5vmin 1vmin;
   margin-bottom: 0px;
-  height: 6cqi;
+  height: 6.5rem;
 `
 
 const ToolIconTextStyledP = styled.p`
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-primary);
   text-align: center;
   margin: 0px 0.5vmin;
   margin-bottom: 0.5vmin;
