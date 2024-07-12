@@ -17,16 +17,12 @@ const StyledInfoButton = styled.button`
   border-bottom: solid 2px var(--color-text-primary);
   background-color: #00000000;
 
-  transition: border var(--info-tab-button-animation-speed) ease-in;
-
   &:hover {
     border-bottom: solid 4px var(--color-text-primary);
-    transition: border var(--info-tab-button-animation-speed) ease-in;
   }
 
   &.${activeButtonName} {
     border-bottom: solid 4px var(--color-primary);
-    transition: border var(--info-tab-button-animation-speed) ease-in;
   }
 `
 
