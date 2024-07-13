@@ -78,38 +78,26 @@ type ProjectMediaPreviewProps = {
   children: ReactNode
 }
 
-type MediaIdState = {
-  id: number
-  slidLeftLast: boolean
-}
-
 function ProjectMediaPreview({ children }: ProjectMediaPreviewProps) {
-  const [imageIdState, setImageIdState] = useState<MediaIdState>({
-    id: 0,
-    slidLeftLast: false,
-  })
+  const [imageId, setImageId] = useState(0)
   const mediaItemDivRef = useRef(null)
 
   const mediaNodes = Children.toArray(children)
 
   function onPressLeftArrow() {
     // Make sure value loops back to max if about to reach negative
-    setImageIdState((prevState) => ({
-      id: prevState.id - 1 < 0 ? mediaNodes.length - 1 : prevState.id - 1,
-      slidLeftLast: true,
-    }))
+    setImageId((prevState) =>
+      prevState - 1 < 0 ? mediaNodes.length - 1 : prevState - 1,
+    )
   }
 
   function onPressRightArrow() {
     // Use mod to cap the id within the array length
-    setImageIdState((prevState) => ({
-      id: (prevState.id + 1) % mediaNodes.length,
-      slidLeftLast: false,
-    }))
+    setImageId((prevState) => (prevState + 1) % mediaNodes.length)
   }
 
   function onPressNavigationButton(selectedItem: number) {
-    setImageIdState({ ...imageIdState, id: selectedItem })
+    setImageId(selectedItem)
   }
 
   return (
@@ -120,19 +108,19 @@ function ProjectMediaPreview({ children }: ProjectMediaPreviewProps) {
         <SwitchTransition>
           <CSSTransition
             timeout={mediaItemSwitchAnimationTime}
-            key={imageIdState.id}
+            key={imageId}
             nodeRef={mediaItemDivRef}
             classNames={mediaItemTransitionName}
           >
             <MediaItemStyledDiv ref={mediaItemDivRef}>
-              {mediaNodes[imageIdState.id]}
+              {mediaNodes[imageId]}
             </MediaItemStyledDiv>
           </CSSTransition>
         </SwitchTransition>
         <MediaPreviewNavigationBar
           onItemSelected={onPressNavigationButton}
           itemAmount={mediaNodes.length}
-          currentlySelectedItem={imageIdState.id}
+          currentlySelectedItem={imageId}
         />
       </MediaCenterStyledDiv>
 
