@@ -32,7 +32,9 @@
   --font-size-navigation-button: 2rem;
 
   /* Animation Times */
-  --info-tab-button-animation-speed: 100ms;
+  --animation-speed-hover-default: 100ms;
+  --animation-speed-active-default: 70ms;
+
   --info-box-content-animation-speed: 300ms;
 
   /* Constants */

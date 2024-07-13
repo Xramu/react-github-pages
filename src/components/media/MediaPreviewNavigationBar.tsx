@@ -29,6 +29,10 @@ const MediaPreviewNavigationStyledDot = styled(MdCircle)`
   &:hover {
     opacity: 0.6;
   }
+
+  &:active {
+    opacity: 1;
+  }
 `
 
 // Component Props & Export

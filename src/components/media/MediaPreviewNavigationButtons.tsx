@@ -2,9 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md"
 
-const arrowButtonHoverAnimationTimeMs = 150
-const arrowButtonActiveAnimationTimeMs = 70
-
 const buttonIconClassName = "button-icon"
 
 type GradientDirection = "to right" | "to left"
@@ -18,14 +15,14 @@ const MediaNavigationStyledButton = styled.button<{
   height: 100%;
   width: 10%;
 
-  transition: all ${arrowButtonHoverAnimationTimeMs}ms ease-in;
+  transition: all var(--animation-speed-hover-default) ease-in;
 
   .${buttonIconClassName} {
     opacity: 0.2;
     color: var(--color-accent);
     width: 50%;
     height: auto;
-    transition: all ${arrowButtonHoverAnimationTimeMs}ms ease-in;
+    transition: all var(--animation-speed-hover-default) ease-in;
   }
 
   &:hover {
@@ -34,19 +31,19 @@ const MediaNavigationStyledButton = styled.button<{
       #ffffff33,
       #00000000
     );
-    transition: all ${arrowButtonHoverAnimationTimeMs}ms ease-in;
+    transition: all var(--animation-speed-hover-default) ease-in;
   }
 
   &:hover > .${buttonIconClassName} {
-    opacity: 1;
+    opacity: 0.6;
     transform: scale(110%);
-    transition: all ${arrowButtonHoverAnimationTimeMs}ms ease-in;
+    transition: all var(--animation-speed-hover-default) ease-in;
   }
 
   &:active > .${buttonIconClassName} {
     opacity: 1;
     transform: scale(100%);
-    transition: all ${arrowButtonActiveAnimationTimeMs}ms ease-in;
+    transition: all var(--animation-speed-active-default) ease-in;
   }
 `
 

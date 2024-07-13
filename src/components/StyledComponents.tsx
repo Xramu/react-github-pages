@@ -36,20 +36,16 @@ export const MediaPreviewMediaItemCSS = css`
 
 // Animations CSS
 
-const hoverEnterAnimationTime = 100
-const activeEnterAnimationTime = 70
-const animationExitTime = 100
-
 export const BouncyClickAnimationsCSS = css`
-  transition: all ${animationExitTime}ms ease-in;
+  transition: all var(--animation-speed-hover-default) ease-in;
 
   &:hover {
     transform: scale(110%);
-    transition: all ${hoverEnterAnimationTime}ms ease-in;
+    transition: all var(--animation-speed-hover-default) ease-in;
   }
 
   &:active {
     transform: scale(90%);
-    transition: all ${activeEnterAnimationTime}ms ease-in;
+    transition: all var(--animation-speed-active-default) ease-in;
   }
 `
