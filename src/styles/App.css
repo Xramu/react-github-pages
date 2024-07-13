@@ -2,27 +2,30 @@
   /* Colors*/
   --color-primary-hue: 300;
   --color-primary-saturation: 25%;
-  --color-primary-lightness: 52%;
+  --color-primary-lightness: 50%;
 
   --color-primary: hsl(var(--color-primary-hue), var(--color-primary-saturation), var(--color-primary-lightness));
 
-  --color-secondary-lightness: 40%;
+  --color-secondary-lightness: calc(var(--color-primary-lightness) - 10%);
 
   --color-secondary: hsl(var(--color-primary-hue), var(--color-primary-saturation), var(--color-secondary-lightness));
 
-  --color-background: hsl(220, 13%, 18%);
+  --color-background: hsl(var(--color-primary-hue), 5%, 15%);
 
-  --color-text-primary: white;
+  --color-accent: white;
+
+  --color-text-primary: var(--color-accent);
 
   --color-link: var(--color-primary);
   --color-link-visited: hsl(var(--color-primary-hue), var(--color-primary-saturation), 62%);
 
-  --color-media-background-gradient-first: hsl(0, 0%, 16%);
-  --color-media-background-gradient-second: hsl(0, 0%, 13%);
-  --color-shadow-primary: hsl(0, 0%, 10%);
+  --color-media-background-gradient-first: hsl(var(--color-primary-hue), 5%, 15%);
+  --color-media-background-gradient-second: hsl(var(--color-primary-hue), 5%, 10%);
+  
+  --color-shadow-primary: hsla(0, 0%, 10%, 90%);
 
   /* Fonts */
-  --font-family-primary: monospace;
+  --font-family-primary: sans-serif;
 
   --font-size-primary: 1.2rem;
   --font-size-small: 0.8rem;

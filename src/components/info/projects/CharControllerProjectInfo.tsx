@@ -81,7 +81,7 @@ function CharControllerProjectInfo() {
       </ProjectTitle>
 
       <SocialButton
-        fgColor={"var(--color-text-primary)"}
+        fgColor={"var(--color-accent)"}
         bgColor={"var(--color-primary)"}
         url="https://github.com/Xramu/Player-Controller-Demo"
       />

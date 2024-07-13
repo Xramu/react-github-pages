@@ -21,7 +21,8 @@ const MediaNavigationStyledButton = styled.button<{
   transition: all ${arrowButtonHoverAnimationTimeMs}ms ease-in;
 
   .${buttonIconClassName} {
-    color: #ffffff55;
+    opacity: 0.2;
+    color: var(--color-accent);
     width: 50%;
     height: auto;
     transition: all ${arrowButtonHoverAnimationTimeMs}ms ease-in;
@@ -37,12 +38,13 @@ const MediaNavigationStyledButton = styled.button<{
   }
 
   &:hover > .${buttonIconClassName} {
-    color: #ffffffff;
+    opacity: 1;
     transform: scale(110%);
     transition: all ${arrowButtonHoverAnimationTimeMs}ms ease-in;
   }
 
   &:active > .${buttonIconClassName} {
+    opacity: 1;
     transform: scale(100%);
     transition: all ${arrowButtonActiveAnimationTimeMs}ms ease-in;
   }

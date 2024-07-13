@@ -14,11 +14,11 @@ const StyledInfoButton = styled.button`
   cursor: pointer;
   margin: 10px 0px 0px 0px;
   border: none;
-  border-bottom: solid 2px var(--color-text-primary);
+  border-bottom: solid 2px var(--color-accent);
   background-color: #00000000;
 
   &:hover {
-    border-bottom: solid 4px var(--color-text-primary);
+    border-bottom: solid 4px var(--color-accent);
   }
 
   &.${activeButtonName} {

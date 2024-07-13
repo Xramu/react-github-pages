@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const LineStyledDiv = styled.div`
   margin: var(--margin-page-vertical-primary) 0px;
-  border: solid 2px var(--color-text-primary);
+  border: solid 2px var(--color-accent);
 `
 
 function HorizontalLine() {

@@ -3,10 +3,6 @@ import styled from "styled-components"
 import { MdCircle } from "react-icons/md"
 import { BouncyClickAnimationsCSS } from "../StyledComponents"
 
-// Animation Constants
-
-const dotHoverAnimationTimeMs = 100
-
 // Styled Components
 
 const MediaPreviewNavigationBarStyledDiv = styled.div`
@@ -21,18 +17,18 @@ const selectedDotClassName = "selected-navigation-dot"
 const MediaPreviewNavigationStyledDot = styled(MdCircle)`
   ${BouncyClickAnimationsCSS}
   cursor: pointer;
-  color: #ffffff33;
   font-size: 2cqi;
 
+  opacity: 0.2;
+  color: var(--color-accent);
+
   &.${selectedDotClassName} {
-    color: #ffffff88;
+    opacity: 0.4;
   }
 
   &:hover {
-    color: #ffffffff;
+    opacity: 0.6;
   }
-
-  transition: color ${dotHoverAnimationTimeMs}ms ease-in;
 `
 
 // Component Props & Export
