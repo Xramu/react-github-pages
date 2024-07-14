@@ -5,6 +5,10 @@ import styled from "styled-components"
 
 const TitledListStyledDiv = styled.div``
 
+const TitledListHeaderStyledH3 = styled.h3`
+  margin-top: 0;
+`
+
 // Component Props & Export
 
 type TitledListProps = {
@@ -21,7 +25,7 @@ function createListFromNodes(listItems: ReactNode[]): ReactNode {
 function TitledList({ title, listItems }: TitledListProps) {
   return (
     <TitledListStyledDiv>
-      {title && <h3>{title}</h3>}
+      {title && <TitledListHeaderStyledH3>{title}</TitledListHeaderStyledH3>}
       {createListFromNodes(listItems)}
     </TitledListStyledDiv>
   )

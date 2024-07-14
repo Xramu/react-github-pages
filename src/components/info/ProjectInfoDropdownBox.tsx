@@ -3,6 +3,7 @@ import InfoTabButton from "../InfoTabButton"
 import { StringReactNodePair } from "../../utils/Types"
 import { CSSTransition, SwitchTransition } from "react-transition-group"
 import styled from "styled-components"
+import { PageVerticalMargin } from "../StyledComponents"
 
 // Animation Constants
 
@@ -12,7 +13,7 @@ const infoSetTransitionTimeMs = 300
 // Styled Components
 
 const MainContainerDiv = styled.div`
-  margin: 10px 0px 0px 0px;
+  ${PageVerticalMargin}
 `
 
 const ButtonRowContainerDiv = styled.div`

@@ -1,25 +1,28 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import { BouncyClickAnimationsCSS } from "../StyledComponents"
 
 // Styled Components
 
+const ToolIconMargin = css`
+  margin: 0.5rem;
+`
+
 const ToolIconContainerStyledDiv = styled.div`
   ${BouncyClickAnimationsCSS}
-  margin: 0.5rem;
+  ${ToolIconMargin}
   text-align: center;
 `
 
 const ToolIconStyledImg = styled.img`
-  margin-bottom: 0px;
   height: 6.5rem;
 `
 
 const ToolIconTextStyledP = styled.p`
+  ${ToolIconMargin}
+  margin-top: 0;
   font-size: var(--font-size-primary);
   text-align: center;
-  margin: 0px 0.5vmin;
-  margin-bottom: 0.5vmin;
 `
 
 // Component Props & Export

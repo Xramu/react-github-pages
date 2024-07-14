@@ -4,6 +4,11 @@ import styled, { css } from "styled-components"
 
 // Generic Styled CSS
 
+export const PageVerticalMargin = css`
+  margin-top: var(--margin-page-vertical-primary);
+  margin-bottom: var(--margin-page-vertical-primary);
+`
+
 export const BasicBoxShadowCSS = css`
   box-shadow: 5px 5px 5px var(--color-shadow-primary);
 `

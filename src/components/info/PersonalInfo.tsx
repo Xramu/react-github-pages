@@ -6,7 +6,15 @@ import TitledList from "../TitledList"
 import {
   PageInlineCenterStyledDiv,
   PageInlineSpaceBetweenWrapStyledDiv,
+  PageVerticalMargin,
 } from "../StyledComponents"
+import styled from "styled-components"
+
+// Styled Components
+
+const SkillsListsDiv = styled(PageInlineSpaceBetweenWrapStyledDiv)`
+  ${PageVerticalMargin};
+`
 
 // Languages/Tools Row Functions
 
@@ -126,16 +134,16 @@ function PersonalInfo() {
         from Espoo, Finland.
       </p>
 
-      <p>I enjoy solving problems and learning something new from them!</p>
-
       <p>
+        I enjoy solving problems and learning something new from them!
+        <br />
         Learning new frameworks, languages, language features and tools gives me
         satisfaction as I look back at all that I've learned.
       </p>
 
       <h2>What I Am Familiar With</h2>
 
-      <PageInlineSpaceBetweenWrapStyledDiv>
+      <SkillsListsDiv>
         <TitledList
           title="Programming Languages"
           listItems={[
@@ -168,7 +176,7 @@ function PersonalInfo() {
             "Keeping code readable and commented",
           ]}
         />
-      </PageInlineSpaceBetweenWrapStyledDiv>
+      </SkillsListsDiv>
 
       <HorizontalLine />
 

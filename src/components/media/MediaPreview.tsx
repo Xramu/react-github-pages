@@ -6,7 +6,7 @@ import {
   MediaPreviewRightNavigationButton,
 } from "./MediaPreviewNavigationButtons"
 import MediaPreviewNavigationBar from "./MediaPreviewNavigationBar"
-import { BasicBoxShadowCSS } from "../StyledComponents"
+import { BasicBoxShadowCSS, PageVerticalMargin } from "../StyledComponents"
 
 /* TODO: 
   Make media slide from the correct slide instead of appearing/disappearing.
@@ -20,8 +20,9 @@ const mediaItemSwitchAnimationTime = 300
 // Styled Components
 
 const MediaPreviewContainerStyledDiv = styled.div`
-  ${BasicBoxShadowCSS}
   margin: auto;
+  ${PageVerticalMargin}
+  ${BasicBoxShadowCSS}
   overflow: hidden;
   background-image: radial-gradient(
     var(--color-media-background-gradient-first),
@@ -31,7 +32,6 @@ const MediaPreviewContainerStyledDiv = styled.div`
   border-radius: 0.5rem;
   display: flex;
   aspect-ratio: 16/7.5;
-  width: 100%;
 `
 
 const MediaCenterStyledDiv = styled.div`

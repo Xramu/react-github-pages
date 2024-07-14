@@ -1,7 +1,8 @@
 import styled from "styled-components"
+import { PageVerticalMargin } from "./StyledComponents"
 
 const LineStyledDiv = styled.div`
-  margin: var(--margin-page-vertical-primary) 0px;
+  ${PageVerticalMargin}
   border: solid 2px var(--color-accent);
 `
 

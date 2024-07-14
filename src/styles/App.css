@@ -39,6 +39,7 @@
 
   /* Constants */
   --margin-page-vertical-primary: 1rem;
+  --margin-page-vertical-title: 2rem;
 }
 
 :link {
@@ -53,4 +54,14 @@ button {
   font-family: var(--font-family-primary);
   font-size: var(--font-size-primary);
   color: var(--color-text-primary);
+}
+
+p {
+  margin-top: var(--margin-page-vertical-primary);
+  margin-bottom: var(--margin-page-vertical-primary);
+}
+
+h1, h2, h3 {
+  margin-top: var(--margin-page-vertical-title);
+  margin-bottom: var(--margin-page-vertical-title);
 }
