@@ -1,4 +1,5 @@
 import RamusRangeBanner from "../../../img/ramus_range/RamusRangeBanner.jpg"
+import Mahiro from "../../../img/mahiro.png"
 import ProjectInfoDropdownBox from "../ProjectInfoDropdownBox"
 import { StringReactNodePair } from "../../../utils/Types"
 import ProjectTitle from "../ProjectTitle"
@@ -94,7 +95,12 @@ function RamusRangeProjectInfo() {
         <MediaPreviewImageItem
           src={RamusRangeBanner}
           alt="Banner of Ramu's Gun Range"
-        />
+        >
+          <p>Banner of the Gun Range Experience</p>
+        </MediaPreviewImageItem>
+        <MediaPreviewImageItem src={Mahiro} alt="Banner of Ramu's Gun Range">
+          <p>Test Image of Mahiro Thinking</p>
+        </MediaPreviewImageItem>
         {projectVideoUrlStrings.map((urlString) => (
           <MediaPreviewYoutubeItem key={urlString} url={new URL(urlString)} />
         ))}

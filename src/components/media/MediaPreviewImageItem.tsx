@@ -1,12 +1,15 @@
-import React, { ComponentPropsWithoutRef } from "react"
+import React, { ComponentPropsWithoutRef, ReactNode } from "react"
 import styled from "styled-components"
 import { MediaPreviewMediaItemCSS } from "../StyledComponents"
 
 // Styled Components
 
-const ProjectStyledImage = styled.img`
+const ContainerStyledDiv = styled.div`
   ${MediaPreviewMediaItemCSS}
-  cursor: pointer;
+  display: flex;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
 
   &:hover {
     transform: scale(102%);
@@ -20,11 +23,35 @@ const ProjectStyledImage = styled.img`
   transition: all var(--animation-speed-hover-default) ease-in;
 `
 
+const ProjectStyledImage = styled.img`
+  max-width: 100%;
+  max-height: 100%;
+  cursor: pointer;
+`
+
+const AbsoluteInfoDiv = styled.div`
+  position: absolute;
+  display: flex;
+  width: 100%;
+  bottom: 0;
+
+  justify-content: center;
+  text-align: center;
+
+  background-color: #3336;
+  p {
+    font-size: 2cqi;
+    margin: 1cqi;
+  }
+`
+
 // Component Props & Export
 
-type ProjectImageProps = ComponentPropsWithoutRef<"img"> & {}
+type ProjectImageProps = ComponentPropsWithoutRef<"img"> & {
+  children?: ReactNode
+}
 
-function MediaPreviewImageItem(props: ProjectImageProps) {
+function MediaPreviewImageItem({ children, alt, ...rest }: ProjectImageProps) {
   function onImageClick() {
     // Exit when already in fullscreen
     if (document.fullscreenElement) {
@@ -37,12 +64,15 @@ function MediaPreviewImageItem(props: ProjectImageProps) {
   }
 
   return (
-    <ProjectStyledImage
-      {...props}
-      id="mediaPreviewImage"
-      onClick={onImageClick}
-      alt={props.alt ? props.alt : "No Description Given"}
-    />
+    <ContainerStyledDiv>
+      <ProjectStyledImage
+        {...rest}
+        id="mediaPreviewImage"
+        onClick={onImageClick}
+        alt={alt ? alt : "No Description Given"}
+      />
+      {children ? <AbsoluteInfoDiv>{children}</AbsoluteInfoDiv> : <></>}
+    </ContainerStyledDiv>
   )
 }
 
