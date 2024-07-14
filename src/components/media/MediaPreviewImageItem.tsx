@@ -40,7 +40,7 @@ const AbsoluteInfoDiv = styled.div`
 
   background-color: #3336;
   p {
-    font-size: 2cqi;
+    font-size: min(2cqi, var(--font-size-primary));
     margin: 1cqi;
   }
 `
