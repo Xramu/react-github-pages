@@ -38,7 +38,9 @@
   --info-box-content-animation-speed: 300ms;
 
   /* Constants */
-  --margin-page-vertical-primary: 1rem;
+  --spacing-primary: 1rem;
+
+  --margin-page-vertical-primary: var(--spacing-primary);
   --margin-page-vertical-title: 2rem;
 }
 

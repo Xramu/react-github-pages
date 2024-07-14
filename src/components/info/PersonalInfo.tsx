@@ -14,6 +14,7 @@ import styled from "styled-components"
 
 const SkillsListsDiv = styled(PageInlineSpaceBetweenWrapStyledDiv)`
   ${PageVerticalMargin};
+  gap: var(--margin-page-vertical-primary);
 `
 
 // Languages/Tools Row Functions

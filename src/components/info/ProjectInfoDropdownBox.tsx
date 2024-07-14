@@ -19,12 +19,12 @@ const MainContainerDiv = styled.div`
 const ButtonRowContainerDiv = styled.div`
   display: flex;
   flex-wrap: wrap;
-  column-gap: 20px;
+  gap: var(--spacing-primary);
 `
 
 const BottomContainerDiv = styled.div`
-  margin-top: 10px;
-  padding-left: 20px;
+  margin-top: var(--spacing-primary);
+  padding-left: var(--spacing-primary);
   border-left: solid 4px var(--color-primary);
   overflow: hidden;
 `
