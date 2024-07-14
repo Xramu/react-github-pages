@@ -8,7 +8,6 @@ const ContainerStyledDiv = styled.div`
   ${MediaPreviewMediaItemCSS}
   display: flex;
   position: relative;
-  height: 100%;
   overflow: hidden;
 
   &:hover {
@@ -26,6 +25,7 @@ const ContainerStyledDiv = styled.div`
 const ProjectStyledImage = styled.img`
   max-width: 100%;
   max-height: 100%;
+  object-fit: contain;
   cursor: pointer;
 `
 

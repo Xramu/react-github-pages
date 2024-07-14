@@ -1,5 +1,9 @@
 import RamusRangeBanner from "../../../img/ramus_range/RamusRangeBanner.jpg"
 import Mahiro from "../../../img/mahiro.png"
+import TestImageHorizontal from "../../../img/test_images/test_image_horizontal.png"
+import TestImageHorizontalLong from "../../../img/test_images/test_image_horizontal_long.png"
+import TestImageVertical from "../../../img/test_images/test_image_vertical.png"
+import TestImageVerticalLong from "../../../img/test_images/test_image_vertical_long.png"
 import ProjectInfoDropdownBox from "../ProjectInfoDropdownBox"
 import { StringReactNodePair } from "../../../utils/Types"
 import ProjectTitle from "../ProjectTitle"
@@ -98,6 +102,16 @@ function RamusRangeProjectInfo() {
         >
           <p>Banner of the Gun Range Experience</p>
         </MediaPreviewImageItem>
+        <MediaPreviewImageItem
+          src={TestImageHorizontal}
+        ></MediaPreviewImageItem>
+        <MediaPreviewImageItem
+          src={TestImageHorizontalLong}
+        ></MediaPreviewImageItem>
+        <MediaPreviewImageItem src={TestImageVertical}></MediaPreviewImageItem>
+        <MediaPreviewImageItem
+          src={TestImageVerticalLong}
+        ></MediaPreviewImageItem>
         <MediaPreviewImageItem src={Mahiro} alt="Banner of Ramu's Gun Range">
           <p>Test Image of Mahiro Thinking</p>
         </MediaPreviewImageItem>
