@@ -6,6 +6,8 @@ import { MediaPreviewMediaItemCSS } from "../StyledComponents"
 
 // Styled Components
 
+const absoluteDivClassName = "ImageTextClass"
+
 const ContainerStyledDiv = styled.div`
   ${MediaPreviewMediaItemCSS}
   display: flex;
@@ -14,6 +16,10 @@ const ContainerStyledDiv = styled.div`
 
   &:hover {
     transform: scale(102%);
+
+    > .${absoluteDivClassName} {
+      opacity: 1;
+    }
   }
 
   &:active {
@@ -34,14 +40,18 @@ const ProjectStyledImage = styled.img`
 
 const AbsoluteInfoDiv = styled.div`
   position: absolute;
-  display: flex;
   width: 100%;
   bottom: 0;
 
   justify-content: center;
   text-align: center;
 
+  opacity: 0;
+
   background-color: #3336;
+
+  transition: all var(--animation-speed-hover-default) ease-in;
+
   p {
     font-size: min(2cqi, var(--font-size-primary));
     margin: 1cqi;
@@ -74,7 +84,13 @@ function MediaPreviewImageItem({ children, alt, ...rest }: ProjectImageProps) {
         onClick={onImageClick}
         alt={alt ? alt : "No Description Given"}
       />
-      {children ? <AbsoluteInfoDiv>{children}</AbsoluteInfoDiv> : <></>}
+      {children ? (
+        <AbsoluteInfoDiv className={absoluteDivClassName}>
+          {children}
+        </AbsoluteInfoDiv>
+      ) : (
+        <></>
+      )}
     </ContainerStyledDiv>
   )
 }

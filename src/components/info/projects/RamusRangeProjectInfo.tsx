@@ -102,16 +102,18 @@ function RamusRangeProjectInfo() {
         >
           <p>Banner of the Gun Range Experience</p>
         </MediaPreviewImageItem>
-        <MediaPreviewImageItem
-          src={TestImageHorizontal}
-        ></MediaPreviewImageItem>
-        <MediaPreviewImageItem
-          src={TestImageHorizontalLong}
-        ></MediaPreviewImageItem>
-        <MediaPreviewImageItem src={TestImageVertical}></MediaPreviewImageItem>
-        <MediaPreviewImageItem
-          src={TestImageVerticalLong}
-        ></MediaPreviewImageItem>
+        <MediaPreviewImageItem src={TestImageHorizontal}>
+          <p>1920x1080 Image</p>
+        </MediaPreviewImageItem>
+        <MediaPreviewImageItem src={TestImageHorizontalLong}>
+          <p>3840x1080 Image</p>
+        </MediaPreviewImageItem>
+        <MediaPreviewImageItem src={TestImageVertical}>
+          <p>1080x1920 Image</p>
+        </MediaPreviewImageItem>
+        <MediaPreviewImageItem src={TestImageVerticalLong}>
+          <p>1080x3840 Image</p>
+        </MediaPreviewImageItem>
         <MediaPreviewImageItem src={Mahiro} alt="Banner of Ramu's Gun Range">
           <p>Test Image of Mahiro Thinking</p>
         </MediaPreviewImageItem>
