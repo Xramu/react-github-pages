@@ -38,8 +38,6 @@ const MediaCenterStyledDiv = styled.div`
   padding: 1rem;
   padding-bottom: 0;
   width: 80%;
-  display: flex;
-  flex-direction: column;
 `
 
 const mediaItemTransitionName = "media-item-transition"

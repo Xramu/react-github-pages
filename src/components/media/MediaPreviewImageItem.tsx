@@ -2,6 +2,8 @@ import React, { ComponentPropsWithoutRef, ReactNode } from "react"
 import styled from "styled-components"
 import { MediaPreviewMediaItemCSS } from "../StyledComponents"
 
+// TODO: Get rid of empty space from the sides of the images that are not wide enough
+
 // Styled Components
 
 const ContainerStyledDiv = styled.div`
@@ -23,6 +25,7 @@ const ContainerStyledDiv = styled.div`
 `
 
 const ProjectStyledImage = styled.img`
+  background-color: var(--color-shadow-primary);
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
