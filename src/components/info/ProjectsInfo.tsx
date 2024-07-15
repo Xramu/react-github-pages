@@ -12,7 +12,7 @@ function ProjectsInfo() {
 
   return (
     <>
-      <h1>{t("info.projects.title")}</h1>
+      <h1>{t("info.projects.unity-projects-title")}</h1>
 
       <HorizontalLine />
 
@@ -24,7 +24,7 @@ function ProjectsInfo() {
 
       <HorizontalLine />
 
-      <h1>React Projects</h1>
+      <h1>{t("info.projects.react-projects-title")}</h1>
 
       <HorizontalLine />
 

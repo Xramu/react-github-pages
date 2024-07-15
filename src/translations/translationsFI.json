@@ -4,30 +4,52 @@
       "about-me-title": "Tietoa Minusta",
       "about-me-introduction": "Hei, olen ohjelmoija Espoosta!\nMielenkiintoni ja vahvuuteni ovat peliohjelmoinnissa, mutta kaikenlaisten järjestelmien rakentaminen tuo minulle mielihyvää!",
       "about-me-description": "Ongelmanratkonta ja niistä uuden oppiminen tuo minulle iloa!\nUusien frameworkkien, ohjelmointikielien ja niihin liittyvien piirteiden oppiminen miellyttää minua etenkin silloin, kun katson kaikkea saavuttamaani.",
+
       "tools-title": "Tuntemani Ympäristöt, Kielet ja Työkalut",
       "tools-list-title-languages": "Ohjelmointikielet",
       "tools-list-title-frameworks": "Työkalut",
+
       "tools-list-title-skills": "Muut Taitoni",
       "tools-list-title-skills-scrum": "Scrum ja viikottaiset sprintit",
       "tools-list-title-skills-oop": "Olio-ohjelmoinnin piirteet ja mallit",
       "tools-list-title-skills-code": "Koodin selvänä pitäminen ja kommentointi"
     },
+
     "projects": {
+      "unity-projects-title": "Unity Projektit",
+
       "ramus-gun-range": {
         "title": "Ramu's Gun Range",
         "summary": "Ramu's Gun Range on interaktiivinen VR-ampumaratakokemus, joka sisältää aseiden yksityiskohtaista käsittelyä ja käyttöä.\nProjekti on luotu käyttäen C#-ohjelmointikieltä ja Unity-pelimoottoria.",
+
         "details-tab": {
           "title": "Tietoa",
-          "text-first": "Rakensin tämän kokemuksen käyttäen C#-ohjelmointikieltä ja VRChatin paljastamaa Unityn rajapintaa.\nKokemuksessa on jo 600 000 kävijäkertaa ja se on avoinna kaikille VRChatin pelaajille.\nKokemuksen voit löytää",
+          "text-first": "Ramu's Gun Range on luomani ampumaratakokemus peliin VRChat.\nIdeana oli luoda ns. maailma VRChat-peliin, jossa pelaaja pääsee yksin tai kavereittensa kanssa ampumaan ja leikkimään yksityiskohtaisilla aseilla.\n\nAmpumaradalta löytyy 12 erilaista asetta, joissa jokaisessa on aidontuntuiset lataus- ja ampumismekaniikat.\nYli 30 aseiden lisävarustetta voi ampumaradalla myös käyttää aseiden \"tuunaamiseen\"\n\nLisävarusteista löytyy monia eri punapiste- ja kiikaritähtäimiä, laserosoittimia, lamppuja, äänenvaimentimia ja kiskojen pidennyksiä.\nOsalla lisävarusteista on toimintoja, kun pelaaja painaa niitä. Esimerkiksi osalla kiikaritähtäimistä on mahdollisuus vaihtaa suurennuksen tasoa.\n\nRakensin tämän kokemuksen käyttäen C#-ohjelmointikieltä ja VRChatin paljastamaa Unityn rajapintaa.\n\nKokemuksessa on jo 600 000 kävijäkertaa ja se on avoinna kaikille VRChatin pelaajille.\n\nVoit löytää ampumaradan",
           "text-world-link": "Täältä",
-          "text-second": " tai VRChat-pelin sisäänrakennetulla hakukoneella."
+          "text-second": " tai VRChat-pelin sisäänrakennetulla hakukoneella etsimällä \"Ramu's Gun Range\"."
         },
+
         "code-tab": {
           "title": "Koodi",
-          "text-first": "Käytän olio-ohjelmointia",
-          "text-second": "eri aseiden funktionaalisuuden jakamiseen.\nKirjoitetun koodin rivimäärä on yli 20 000, sisältäen luokkien ja funktioiden tiivistelmät sekä kommentit."
+          "text-first": "VRChatin tarjoama C#-kääntäjä antaa laajan, mutta rajoitetumman rajapinnan Unityn antamaan toiminnallisuuteen.\nEsimerkiksi luokkien tekeminen ei ole mahdollista, ellei kyseinen luokka peri UdonSharpBehaviour-luokasta.\nTämä vaikeuttaa asiaa, sillä UdonSharpBehaviour-luokka toimii MonoBehaviour-luokan tapaan ja vaatii peliobjektin, johon se on liitetty.\n\nKäytän olio-ohjelmointia",
+          "text-second": "eri aseiden funktionaalisuuden jakamiseen.\n\nKirjoitetun koodin rivimäärä on yli 20 000, sisältäen luokkien ja funktioiden tiivistelmät sekä kommentit."
+        },
+
+        "environment-tab": {
+          "title": "Ympäristö",
+          "text": "Olen luonut ampumaradan Greyboxing-tapaisen ympäristön käyttämällä Unityn ProBuilder pakettia.\n3D-mallinnus ei ole vahvuuteni, mutta sain esimerkiksi tehtyä optimoituja \"Low Poly\"-tyylisiä huonekaluja ampumaradalta löytyvään \"Killhouse\"-haasteeseen.\n\nSaadakseni hyvännäköisen sekä opimoidun valaistuksen, käytin Unityn sisäänrakennettua \"Baked Lighting\"-systeemiä.\nYmpäristöön on myös lisätty Unityn \"Reflection Probe\"-alueita, jotta kiiltävät pinnat esimerkiksi pelaajan kantamista aseista heijastavat ympäristön.\n\nUnityn \"Occlusion Culling\" on myös käytössä, pitäen huolen että vain pelaajan näkemät alueet piirretään näytölle."
+        },
+
+        "assets-tab": {
+          "title": "Resurssit",
+          "text-first": "3D-mallit aseista on ostettu",
+          "text-link-tomcat": "Tomcat's Booth kauppasivulta.",
+          "text-second": "Asemallit ovat täydellisesti luotu paloina, jotta esimerkiksi aseen luistin, pultin ja vasaran voi animoida.\n\nKaikki projektin audio klipit käyttävät",
+          "text-third": "lisenssiä ja on löydetty sivustolta"
         }
-      }
+      },
+
+      "react-projects-title": "React Projektit"
     }
   }
 }

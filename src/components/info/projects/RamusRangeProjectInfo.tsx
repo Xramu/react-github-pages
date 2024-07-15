@@ -54,28 +54,22 @@ function RamusRangeProjectInfo() {
   }
 
   const environmentInfoSet: StringReactNodePair = {
-    string: "Environment",
-    node: (
-      <p>
-        The environment and lighting is fully set up and made by me using
-        Unity's baked lighting, baked reflections and occlusion culling.
-        <br />
-        For modelling the environment and small furniture sets, I used Unity's
-        ProBuilder package.
-      </p>
-    ),
+    string: t("info.projects.ramus-gun-range.environment-tab.title"),
+    node: <p>{t("info.projects.ramus-gun-range.environment-tab.text")}</p>,
   }
 
   const gunsAndModelsInfoSet: StringReactNodePair = {
-    string: "Assets",
+    string: t("info.projects.ramus-gun-range.assets-tab.title"),
     node: (
       <p>
-        3D gun models are bought from{" "}
-        <a href="https://tomcattoybox.booth.pm/">Tomcat's Booth Store.</a>
+        {t("info.projects.ramus-gun-range.assets-tab.text-first") + " "}
+        <a href="https://tomcattoybox.booth.pm/">
+          {t("info.projects.ramus-gun-range.assets-tab.text-link-tomcat")}
+        </a>
         <br />
-        All of the audio is{" "}
+        {t("info.projects.ramus-gun-range.assets-tab.text-second") + " "}
         <a href="https://creativecommons.org/public-domain/cc0/">CC0</a>{" "}
-        licensed downloaded from{" "}
+        {t("info.projects.ramus-gun-range.assets-tab.text-third") + " "}
         <a href="https://freesound.org/">Freesound.org</a>
       </p>
     ),

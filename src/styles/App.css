@@ -27,6 +27,8 @@
   /* Fonts */
   --font-family-primary: sans-serif;
 
+  --line-height-primary: 1.5rem;
+
   --font-size-primary: 1.2rem;
   --font-size-small: 0.8rem;
   --font-size-navigation-button: 2rem;
@@ -60,6 +62,7 @@ button {
 
 p {
   white-space: pre-line;
+  line-height: var(--line-height-primary);
   margin-top: var(--margin-page-vertical-primary);
   margin-bottom: var(--margin-page-vertical-primary);
 }

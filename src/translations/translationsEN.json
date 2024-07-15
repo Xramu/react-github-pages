@@ -4,31 +4,81 @@
       "about-me-title": "About Me",
       "about-me-introduction": "Hi, I am known as Xramu online and I am a game and software developer from Espoo, Finland.",
       "about-me-description": "I enjoy solving problems and learning something new from them!\nLearning new frameworks, languages, language features and tools gives me satisfaction as I look back at all that I've learned.",
+
       "tools-title": "What I Am Familiar With",
       "tools-list-title-languages": "Programming Languages",
       "tools-list-title-frameworks": "Frameworks & Tools",
+
       "tools-list-title-skills": "Other Skills",
       "tools-list-title-skills-scrum": "Scrum and week-based sprints",
       "tools-list-title-skills-oop": "Object-oriented principles & patterns",
       "tools-list-title-skills-code": "Keeping code readable and commented"
     },
+
     "projects": {
-      "title": "Unity Projects",
+      "unity-projects-title": "Unity Projects",
+
       "ramus-gun-range": {
         "title": "Ramu's Gun Range",
         "summary": "Ramu's Gun Range is an interactive VRChat shooting range experience with detailed gunplay and functionality created with Unity and C#.",
+
         "details-tab": {
           "title": "Details",
           "text-first": "This project is fully programmed by me using C# and VRChat's exposed Unity API.\nThe experience has been visited over 600,000 times and is available for anyone who has access to VRChat.\nThe world can be found",
           "text-world-link": "Here",
           "text-second": "or through VRChat's in-game world search."
         },
+
         "code-tab": {
           "title": "Code",
           "text-first": "I heavily use object-oriented programming",
           "text-second": "for sharing functionality between different guns and challenges.\nTotal length of the written code exceeds over 20,000 lines including comments and summaries."
+        },
+
+        "environment-tab": {
+          "title": "Environment",
+          "text": "The environment and lighting is fully set up and made by me using Unity's baked lighting, baked reflections and occlusion culling.\nFor modelling the environment and small furniture sets, I used Unity's ProBuilder package."
+        },
+
+        "assets-tab": {
+          "title": "Assets",
+          "text-first": "3D gun models are bought from",
+          "text-link-tomcat": "Tomcat's Booth Store.",
+          "text-second": "All of the audio is",
+          "text-third": "licensed downloaded from"
         }
-      }
+      },
+
+      "character-controller": {
+        "title": "First-Person and Third-Person Character Controller Demo",
+        "summary": "Character controller Unity project.\nThe goal was to create a character controller capable of platforming and running through obstacle courses.",
+
+        "details-tab": {
+          "title": "Details",
+          "text": "This is a small character controller demo I made using Unity and C#.\nThe movement system includes different animations for any rigged humanoid set as the player model.\nSupport for changing between first-person and third-person views."
+        },
+
+        "code-tab": {
+          "title": "Koodi",
+          "text-first": "VRChatin tarjoama C#-kääntäjä antaa laajan, mutta rajoitetumman rajapinnan Unityn antamaan toiminnallisuuteen.\nEsimerkiksi luokkien tekeminen ei ole mahdollista, ellei kyseinen luokka peri UdonSharpBehaviour-luokasta.\nTämä vaikeuttaa asiaa, sillä UdonSharpBehaviour-luokka toimii MonoBehaviour-luokan tapaan ja vaatii peliobjektin, johon se on liitetty.\n\nKäytän olio-ohjelmointia",
+          "text-second": "eri aseiden funktionaalisuuden jakamiseen.\n\nKirjoitetun koodin rivimäärä on yli 20 000, sisältäen luokkien ja funktioiden tiivistelmät sekä kommentit."
+        },
+
+        "environment-tab": {
+          "title": "Ympäristö",
+          "text": "Olen luonut ampumaradan Greyboxing-tapaisen ympäristön käyttämällä Unityn ProBuilder pakettia.\n3D-mallinnus ei ole vahvuuteni, mutta sain esimerkiksi tehtyä optimoituja \"Low Poly\"-tyylisiä huonekaluja ampumaradalta löytyvään \"Killhouse\"-haasteeseen.\n\nSaadakseni hyvännäköisen sekä opimoidun valaistuksen, käytin Unityn sisäänrakennettua \"Baked Lighting\"-systeemiä.\nYmpäristöön on myös lisätty Unityn \"Reflection Probe\"-alueita, jotta kiiltävät pinnat esimerkiksi pelaajan kantamista aseista heijastavat ympäristön.\n\nUnityn \"Occlusion Culling\" on myös käytössä, pitäen huolen että vain pelaajan näkemät alueet piirretään näytölle."
+        },
+
+        "assets-tab": {
+          "title": "Resurssit",
+          "text-first": "3D-mallit aseista on ostettu",
+          "text-link-tomcat": "Tomcat's Booth kauppasivulta.",
+          "text-second": "Asemallit ovat täydellisesti luotu paloina, jotta esimerkiksi aseen luistin, pultin ja vasaran voi animoida.\n\nKaikki projektin audio klipit käyttävät",
+          "text-third": "lisenssiä ja on löydetty sivustolta"
+        }
+      },
+
+      "react-projects-title": "React Projects"
     }
   }
 }
