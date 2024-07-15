@@ -11,8 +11,16 @@ const absoluteDivClassName = "ImageTextClass"
 const ContainerStyledDiv = styled.div`
   ${MediaPreviewMediaItemCSS}
   display: flex;
+  justify-content: center;
+
+  height: 100%;
+  width: 100%;
+
   position: relative;
+
   overflow: hidden;
+
+  background-color: var(--color-shadow-primary);
 
   &:hover {
     transform: scale(102%);
@@ -22,16 +30,10 @@ const ContainerStyledDiv = styled.div`
     }
   }
 
-  &:active {
-    transform: scale(98%);
-    transition: all var(--animation-speed-active-default) ease-in;
-  }
-
   transition: all var(--animation-speed-hover-default) ease-in;
 `
 
 const ProjectStyledImage = styled.img`
-  background-color: var(--color-shadow-primary);
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
@@ -48,7 +50,7 @@ const AbsoluteInfoDiv = styled.div`
 
   opacity: 0;
 
-  background-color: #3336;
+  background-color: #2229;
 
   transition: all var(--animation-speed-hover-default) ease-in;
 
