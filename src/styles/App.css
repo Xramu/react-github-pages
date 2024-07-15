@@ -59,6 +59,7 @@ button {
 }
 
 p {
+  white-space: pre-line;
   margin-top: var(--margin-page-vertical-primary);
   margin-bottom: var(--margin-page-vertical-primary);
 }

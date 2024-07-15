@@ -5,11 +5,14 @@ import RamusRangeProjectInfo from "./projects/RamusRangeProjectInfo"
 import CharControllerProjectInfo from "./projects/CharControllerProjectInfo"
 import GithubPageProjectInfo from "./projects/GithubPageProjectInfo"
 import YahtzeeAppProjectInfo from "./projects/YahtzeeAppProjectInfo"
+import { useTranslation } from "react-i18next"
 
 function ProjectsInfo() {
+  const { t } = useTranslation()
+
   return (
     <>
-      <h1>Unity Projects</h1>
+      <h1>{t("info.projects.title")}</h1>
 
       <HorizontalLine />
 

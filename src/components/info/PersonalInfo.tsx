@@ -9,6 +9,7 @@ import {
   PageVerticalMargin,
 } from "../StyledComponents"
 import styled from "styled-components"
+import { useTranslation } from "react-i18next"
 
 // Styled Components
 
@@ -126,27 +127,20 @@ function getToolsRow() {
 // Component Export
 
 function PersonalInfo() {
+  const { t } = useTranslation()
   return (
     <>
-      <h1>About Me</h1>
+      <h1>{t("info.personal.about-me-title")}</h1>
 
-      <p>
-        Hi, I am known as Xramu online and I am a game and software developer
-        from Espoo, Finland.
-      </p>
+      <p>{t("info.personal.about-me-introduction")}</p>
 
-      <p>
-        I enjoy solving problems and learning something new from them!
-        <br />
-        Learning new frameworks, languages, language features and tools gives me
-        satisfaction as I look back at all that I've learned.
-      </p>
+      <p>{t("info.personal.about-me-description")}</p>
 
-      <h2>What I Am Familiar With</h2>
+      <h2>{t("info.personal.tools-title")}</h2>
 
       <SkillsListsDiv>
         <TitledList
-          title="Programming Languages"
+          title={t("info.personal.tools-list-title-languages")}
           listItems={[
             "C#, C++ & C",
             "Java & Kotlin",
@@ -157,7 +151,7 @@ function PersonalInfo() {
         />
 
         <TitledList
-          title="Frameworks & Tools"
+          title={t("info.personal.tools-list-title-frameworks")}
           listItems={[
             "Unity",
             "React & React Native",
@@ -170,11 +164,11 @@ function PersonalInfo() {
         />
 
         <TitledList
-          title="Other Skills"
+          title={t("info.personal.tools-list-title-skills")}
           listItems={[
-            "Scrum and week-based sprints",
-            "Object-oriented principles & patterns",
-            "Keeping code readable and commented",
+            t("info.personal.tools-list-title-skills-scrum"),
+            t("info.personal.tools-list-title-skills-oop"),
+            t("info.personal.tools-list-title-skills-code"),
           ]}
         />
       </SkillsListsDiv>

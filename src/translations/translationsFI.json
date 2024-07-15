@@ -1,0 +1,26 @@
+{
+  "info": {
+    "personal": {
+      "about-me-title": "Tietoa Minusta",
+      "about-me-introduction": "Hei, olen ohjelmoija Espoosta!\nMielenkiintoni ja vahvuuteni ovat peliohjelmoinnissa, mutta kaikenlaisten järjestelmien rakentaminen tuo minulle mielihyvää!",
+      "about-me-description": "Ongelmanratkonta ja niistä uuden oppiminen tuo minulle iloa!\nUusien frameworkkien, ohjelmointikielien ja niihin liittyvien piirteiden oppiminen miellyttää minua etenkin silloin, kun katson kaikkea saavuttamaani.",
+      "tools-title": "Tuntemani Ympäristöt, Kielet ja Työkalut",
+      "tools-list-title-languages": "Ohjelmointikielet",
+      "tools-list-title-frameworks": "Työkalut",
+      "tools-list-title-skills": "Muut Taitoni",
+      "tools-list-title-skills-scrum": "Scrum ja viikottaiset sprintit",
+      "tools-list-title-skills-oop": "Olio-ohjelmoinnin piirteet ja mallit",
+      "tools-list-title-skills-code": "Koodin selvänä pitäminen ja kommentointi"
+    },
+    "projects": {
+      "ramus-gun-range": {
+        "title": "Ramu's Gun Range",
+        "summary": "Ramu's Gun Range is an interactive VRChat shooting range experience with detailed gunplay and functionality created with Unity and C#.",
+        "details-name": "Tietoa",
+        "details-text-first": "Ramu's Gun Range on interaktiivinen ampumarata jonka rakensin käyttäen C#-ohjelmointikieltä ja VRChatin paljastamaa Unityn rajapintaa.\nKokemuksessa on jo 600 000 kävijäkertaa ja se on avoinna kaikille VRChatin pelaajille.\nKokemuksen voit löytää",
+        "details-text-link": "Täältä",
+        "details-text-second": " tai VRChat-pelin sisäänrakennetulla hakukoneella."
+      }
+    }
+  }
+}

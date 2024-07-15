@@ -1,0 +1,27 @@
+{
+  "info": {
+    "personal": {
+      "about-me-title": "About Me",
+      "about-me-introduction": "Hi, I am known as Xramu online and I am a game and software developer from Espoo, Finland.",
+      "about-me-description": "I enjoy solving problems and learning something new from them!\nLearning new frameworks, languages, language features and tools gives me satisfaction as I look back at all that I've learned.",
+      "tools-title": "What I Am Familiar With",
+      "tools-list-title-languages": "Programming Languages",
+      "tools-list-title-frameworks": "Frameworks & Tools",
+      "tools-list-title-skills": "Other Skills",
+      "tools-list-title-skills-scrum": "Scrum and week-based sprints",
+      "tools-list-title-skills-oop": "Object-oriented principles & patterns",
+      "tools-list-title-skills-code": "Keeping code readable and commented"
+    },
+    "projects": {
+      "title": "Unity Projects",
+      "ramus-gun-range": {
+        "title": "Ramu's Gun Range",
+        "summary": "Ramu's Gun Range is an interactive VRChat shooting range experience with detailed gunplay and functionality created with Unity and C#.",
+        "details-name": "Details",
+        "details-text-first": "This project is fully programmed by me using C# and VRChat's exposed Unity API.\nThe experience has been visited over 600,000 times and is available for anyone who has access to VRChat.\nThe world can be found",
+        "details-text-link": "Here",
+        "details-text-second": "or through VRChat's in-game world search."
+      }
+    }
+  }
+}
