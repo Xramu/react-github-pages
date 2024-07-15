@@ -89,8 +89,7 @@ function RamusRangeProjectInfo() {
       <ProjectTitle>Ramu's Gun Range</ProjectTitle>
 
       <ProjectSummary>
-        Ramu's Gun Range is an interactive VRChat shooting range experience with
-        detailed gunplay and functionality created with Unity and C#.
+        {t("info.projects.ramus-gun-range.summary")}
       </ProjectSummary>
 
       <MediaPreview>

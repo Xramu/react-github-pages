@@ -15,9 +15,9 @@
     "projects": {
       "ramus-gun-range": {
         "title": "Ramu's Gun Range",
-        "summary": "Ramu's Gun Range is an interactive VRChat shooting range experience with detailed gunplay and functionality created with Unity and C#.",
+        "summary": "Ramu's Gun Range on interaktiivinen VR-ampumaratakokemus, joka sisältää aseiden yksityiskohtaista käsittelyä ja käyttöä.\nProjekti on luotu käyttäen C#-ohjelmointikieltä ja Unity-pelimoottoria.",
         "details-name": "Tietoa",
-        "details-text-first": "Ramu's Gun Range on interaktiivinen ampumarata jonka rakensin käyttäen C#-ohjelmointikieltä ja VRChatin paljastamaa Unityn rajapintaa.\nKokemuksessa on jo 600 000 kävijäkertaa ja se on avoinna kaikille VRChatin pelaajille.\nKokemuksen voit löytää",
+        "details-text-first": "Rakensin tämän kokemuksen käyttäen C#-ohjelmointikieltä ja VRChatin paljastamaa Unityn rajapintaa.\nKokemuksessa on jo 600 000 kävijäkertaa ja se on avoinna kaikille VRChatin pelaajille.\nKokemuksen voit löytää",
         "details-text-link": "Täältä",
         "details-text-second": " tai VRChat-pelin sisäänrakennetulla hakukoneella."
       }
