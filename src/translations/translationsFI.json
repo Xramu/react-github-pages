@@ -16,10 +16,17 @@
       "ramus-gun-range": {
         "title": "Ramu's Gun Range",
         "summary": "Ramu's Gun Range on interaktiivinen VR-ampumaratakokemus, joka sisältää aseiden yksityiskohtaista käsittelyä ja käyttöä.\nProjekti on luotu käyttäen C#-ohjelmointikieltä ja Unity-pelimoottoria.",
-        "details-name": "Tietoa",
-        "details-text-first": "Rakensin tämän kokemuksen käyttäen C#-ohjelmointikieltä ja VRChatin paljastamaa Unityn rajapintaa.\nKokemuksessa on jo 600 000 kävijäkertaa ja se on avoinna kaikille VRChatin pelaajille.\nKokemuksen voit löytää",
-        "details-text-link": "Täältä",
-        "details-text-second": " tai VRChat-pelin sisäänrakennetulla hakukoneella."
+        "details-tab": {
+          "title": "Tietoa",
+          "text-first": "Rakensin tämän kokemuksen käyttäen C#-ohjelmointikieltä ja VRChatin paljastamaa Unityn rajapintaa.\nKokemuksessa on jo 600 000 kävijäkertaa ja se on avoinna kaikille VRChatin pelaajille.\nKokemuksen voit löytää",
+          "text-world-link": "Täältä",
+          "text-second": " tai VRChat-pelin sisäänrakennetulla hakukoneella."
+        },
+        "code-tab": {
+          "title": "Koodi",
+          "text-first": "Käytän olio-ohjelmointia",
+          "text-second": "eri aseiden funktionaalisuuden jakamiseen.\nKirjoitetun koodin rivimäärä on yli 20 000, sisältäen luokkien ja funktioiden tiivistelmät sekä kommentit."
+        }
       }
     }
   }

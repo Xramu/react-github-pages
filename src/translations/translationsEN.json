@@ -17,10 +17,17 @@
       "ramus-gun-range": {
         "title": "Ramu's Gun Range",
         "summary": "Ramu's Gun Range is an interactive VRChat shooting range experience with detailed gunplay and functionality created with Unity and C#.",
-        "details-name": "Details",
-        "details-text-first": "This project is fully programmed by me using C# and VRChat's exposed Unity API.\nThe experience has been visited over 600,000 times and is available for anyone who has access to VRChat.\nThe world can be found",
-        "details-text-link": "Here",
-        "details-text-second": "or through VRChat's in-game world search."
+        "details-tab": {
+          "title": "Details",
+          "text-first": "This project is fully programmed by me using C# and VRChat's exposed Unity API.\nThe experience has been visited over 600,000 times and is available for anyone who has access to VRChat.\nThe world can be found",
+          "text-world-link": "Here",
+          "text-second": "or through VRChat's in-game world search."
+        },
+        "code-tab": {
+          "title": "Code",
+          "text-first": "I heavily use object-oriented programming",
+          "text-second": "for sharing functionality between different guns and challenges.\nTotal length of the written code exceeds over 20,000 lines including comments and summaries."
+        }
       }
     }
   }

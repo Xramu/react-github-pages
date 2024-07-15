@@ -28,30 +28,27 @@ function RamusRangeProjectInfo() {
   // Info Tabs of this project
 
   const detailsInfoSet: StringReactNodePair = {
-    string: t("info.projects.ramus-gun-range.details-name"),
+    string: t("info.projects.ramus-gun-range.details-tab.title"),
     node: (
       <p>
-        {t("info.projects.ramus-gun-range.details-text-first") + " "}
+        {t("info.projects.ramus-gun-range.details-tab.text-first") + " "}
         <a href="https://vrchat.com/home/launch?worldId=wrld_9870aa37-916c-4e90-ba71-b8703c8204b3">
-          {t("info.projects.ramus-gun-range.details-text-link")}
+          {t("info.projects.ramus-gun-range.details-tab.text-world-link")}
         </a>{" "}
-        {t("info.projects.ramus-gun-range.details-text-second")}
+        {t("info.projects.ramus-gun-range.details-tab.text-second")}
       </p>
     ),
   }
 
   const codeInfoSet: StringReactNodePair = {
-    string: "Code",
+    string: t("info.projects.ramus-gun-range.code-tab.title"),
     node: (
       <p>
-        I heavily use object-oriented programming (
+        {t("info.projects.ramus-gun-range.code-tab.text-first")} (
         <a href="https://en.wikipedia.org/wiki/Object-oriented_programming">
           OOP
         </a>
-        ) for sharing functionality between different guns and challenges.
-        <br />
-        Total length of the written code exceeds over 20,000 lines including
-        comments and summaries.
+        ) {t("info.projects.ramus-gun-range.code-tab.text-second")}
       </p>
     ),
   }
