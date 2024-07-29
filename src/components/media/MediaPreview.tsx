@@ -7,6 +7,7 @@ import {
 } from "./MediaPreviewNavigationButtons"
 import MediaPreviewNavigationBar from "./MediaPreviewNavigationBar"
 import { BasicBoxShadowCSS, PageVerticalMargin } from "../StyledComponents"
+import useWindowDimensions from "../../hooks/useWindowDimensions"
 
 /* TODO: 
   Make media slide from the correct slide instead of appearing/disappearing.
@@ -77,6 +78,8 @@ type ProjectMediaPreviewProps = {
 }
 
 function ProjectMediaPreview({ children }: ProjectMediaPreviewProps) {
+  const windowDimensions = useWindowDimensions()
+
   const [imageId, setImageId] = useState(0)
   const mediaItemDivRef = useRef(null)
 
@@ -99,7 +102,9 @@ function ProjectMediaPreview({ children }: ProjectMediaPreviewProps) {
   }
 
   return (
-    <MediaPreviewContainerStyledDiv>
+    <MediaPreviewContainerStyledDiv
+      style={{ aspectRatio: windowDimensions.x / windowDimensions.y }}
+    >
       <MediaPreviewLeftNavigationButton onClick={onPressLeftArrow} />
 
       <MediaCenterStyledDiv>
