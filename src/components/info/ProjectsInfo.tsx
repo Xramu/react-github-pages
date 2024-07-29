@@ -8,11 +8,9 @@ import YahtzeeAppProjectInfo from "./projects/YahtzeeAppProjectInfo"
 import { useTranslation } from "react-i18next"
 
 function ProjectsInfo() {
-  const { t } = useTranslation()
-
   return (
     <>
-      <h1>{t("info.projects.unity-projects-title")}</h1>
+      <h1>Unity Projects</h1>
 
       <HorizontalLine />
 
@@ -24,7 +22,7 @@ function ProjectsInfo() {
 
       <HorizontalLine />
 
-      <h1>{t("info.projects.react-projects-title")}</h1>
+      <h1>React Projects</h1>
 
       <HorizontalLine />
 

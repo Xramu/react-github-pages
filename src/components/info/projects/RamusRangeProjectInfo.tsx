@@ -11,7 +11,6 @@ import ProjectSummary from "../ProjectSummary"
 import MediaPreview from "../../media/MediaPreview"
 import MediaPreviewImageItem from "../../media/MediaPreviewImageItem"
 import MediaPreviewYoutubeItem from "../../media/MediaPreviewYoutubeItem"
-import { useTranslation } from "react-i18next"
 
 // Project Videos
 
@@ -23,53 +22,66 @@ const projectVideoUrlStrings = [
 // Component export
 
 function RamusRangeProjectInfo() {
-  const { t } = useTranslation()
-
   // Info Tabs of this project
 
   const detailsInfoSet: StringReactNodePair = {
-    string: t("info.projects.ramus-gun-range.details-tab.title"),
+    string: "Details",
     node: (
       <p>
-        {t("info.projects.ramus-gun-range.details-tab.text-first") + " "}
+        This project is fully programmed by me using C# and VRChat's exposed
+        Unity API.
+        <br />
+        The experience has been visited over 600,000 times and is available for
+        anyone who has access to VRChat.
+        <br />
+        The world can be found{" "}
         <a href="https://vrchat.com/home/launch?worldId=wrld_9870aa37-916c-4e90-ba71-b8703c8204b3">
-          {t("info.projects.ramus-gun-range.details-tab.text-world-link")}
+          Here
         </a>{" "}
-        {t("info.projects.ramus-gun-range.details-tab.text-second")}
+        or through VRChat's in-game world search.
       </p>
     ),
   }
 
   const codeInfoSet: StringReactNodePair = {
-    string: t("info.projects.ramus-gun-range.code-tab.title"),
+    string: "Code",
     node: (
       <p>
-        {t("info.projects.ramus-gun-range.code-tab.text-first")} (
+        I heavily use object-oriented programming (
         <a href="https://en.wikipedia.org/wiki/Object-oriented_programming">
           OOP
         </a>
-        ) {t("info.projects.ramus-gun-range.code-tab.text-second")}
+        ) for sharing functionality between different guns and challenges
+        <br />
+        Total length of the written code exceeds over 20,000 lines including
+        comments and summaries.
       </p>
     ),
   }
 
   const environmentInfoSet: StringReactNodePair = {
-    string: t("info.projects.ramus-gun-range.environment-tab.title"),
-    node: <p>{t("info.projects.ramus-gun-range.environment-tab.text")}</p>,
+    string: "Environment",
+    node: (
+      <p>
+        The environment and lighting is fully set up and made by me using
+        Unity's baked lighting, baked reflections and occlusion culling.
+        <br />
+        For modelling the environment and small furniture sets, I used Unity's
+        ProBuilder package.
+      </p>
+    ),
   }
 
   const gunsAndModelsInfoSet: StringReactNodePair = {
-    string: t("info.projects.ramus-gun-range.assets-tab.title"),
+    string: "Assets",
     node: (
       <p>
-        {t("info.projects.ramus-gun-range.assets-tab.text-first") + " "}
-        <a href="https://tomcattoybox.booth.pm/">
-          {t("info.projects.ramus-gun-range.assets-tab.text-link-tomcat")}
-        </a>
+        3D gun models are bought from{" "}
+        <a href="https://tomcattoybox.booth.pm/">Tomcat's Booth Store.</a>
         <br />
-        {t("info.projects.ramus-gun-range.assets-tab.text-second") + " "}
+        All of the audio is{" "}
         <a href="https://creativecommons.org/public-domain/cc0/">CC0</a>{" "}
-        {t("info.projects.ramus-gun-range.assets-tab.text-third") + " "}
+        licensed downloaded from{" "}
         <a href="https://freesound.org/">Freesound.org</a>
       </p>
     ),
@@ -80,7 +92,8 @@ function RamusRangeProjectInfo() {
       <ProjectTitle>Ramu's Gun Range</ProjectTitle>
 
       <ProjectSummary>
-        {t("info.projects.ramus-gun-range.summary")}
+        Ramu's Gun Range is an interactive VRChat shooting range experience with
+        detailed gunplay and functionality created with Unity and C#.
       </ProjectSummary>
 
       <MediaPreview>

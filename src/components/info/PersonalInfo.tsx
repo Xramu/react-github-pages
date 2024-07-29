@@ -9,7 +9,6 @@ import {
   PageVerticalMargin,
 } from "../StyledComponents"
 import styled from "styled-components"
-import { useTranslation } from "react-i18next"
 
 // Styled Components
 
@@ -127,20 +126,27 @@ function getToolsRow() {
 // Component Export
 
 function PersonalInfo() {
-  const { t } = useTranslation()
   return (
     <>
-      <h1>{t("info.personal.about-me-title")}</h1>
+      <h1>About Me</h1>
 
-      <p>{t("info.personal.about-me-introduction")}</p>
+      <p>
+        Hi, I am known as Xramu online and I am a game and software developer
+        from Espoo, Finland.
+      </p>
 
-      <p>{t("info.personal.about-me-description")}</p>
+      <p>
+        I enjoy solving problems and learning something new from them!
+        <br />
+        Learning new frameworks, languages, language features and tools gives me
+        satisfaction as I look back at all that I've learned.
+      </p>
 
-      <h2>{t("info.personal.tools-title")}</h2>
+      <h2>What I Am Familiar With</h2>
 
       <SkillsListsDiv>
         <TitledList
-          title={t("info.personal.tools-list-title-languages")}
+          title="Programming Languages"
           listItems={[
             "C#, C++ & C",
             "Java & Kotlin",
@@ -151,7 +157,7 @@ function PersonalInfo() {
         />
 
         <TitledList
-          title={t("info.personal.tools-list-title-frameworks")}
+          title="Frameworks & Tools"
           listItems={[
             "Unity",
             "React & React Native",
@@ -164,11 +170,11 @@ function PersonalInfo() {
         />
 
         <TitledList
-          title={t("info.personal.tools-list-title-skills")}
+          title="Other Skills"
           listItems={[
-            t("info.personal.tools-list-title-skills-scrum"),
-            t("info.personal.tools-list-title-skills-oop"),
-            t("info.personal.tools-list-title-skills-code"),
+            "Scrum and week-based sprints",
+            "Object-oriented principles & patterns",
+            "Keeping code readable and commented",
           ]}
         />
       </SkillsListsDiv>
