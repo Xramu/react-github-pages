@@ -1,11 +1,10 @@
 import React from "react"
 import HorizontalLine from "../HorizontalLine"
 
-import RamusRangeProjectInfo from "./projects/RamusRangeProjectInfo"
+import RamusRangeProjectInfo from "./projects/ramus_gun_range/RamusRange"
 import CharControllerProjectInfo from "./projects/CharControllerProjectInfo"
 import GithubPageProjectInfo from "./projects/GithubPageProjectInfo"
 import YahtzeeAppProjectInfo from "./projects/YahtzeeAppProjectInfo"
-import { useTranslation } from "react-i18next"
 
 function ProjectsInfo() {
   return (
