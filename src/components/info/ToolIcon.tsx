@@ -1,6 +1,7 @@
 import React from "react"
 import styled, { css } from "styled-components"
 import { BouncyClickAnimationsCSS } from "../StyledComponents"
+import NewTabAnchor from "../NewTabAnchor"
 
 // Styled Components
 
@@ -39,11 +40,7 @@ function ToolIcon({ src, alt, link }: ToolIconProps) {
 
   // Add possible anchor
   if (link && link.length > 0) {
-    icon = (
-      <a target="_blank" rel="noopener noreferrer" href={link}>
-        {icon}
-      </a>
-    )
+    icon = <NewTabAnchor href={link}>{icon}</NewTabAnchor>
   }
 
   // Add everything into a container with a paragraph at the bottom
