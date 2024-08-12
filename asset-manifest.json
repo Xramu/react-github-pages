@@ -1,21 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.2fb7666f.css",
-    "main.js": "/static/js/main.c2677738.js",
+    "main.css": "/static/css/main.a2442816.css",
+    "main.js": "/static/js/main.b37566c2.js",
     "static/js/787.7cf6c855.chunk.js": "/static/js/787.7cf6c855.chunk.js",
     "static/media/RamusRangeBanner.jpg": "/static/media/RamusRangeBanner.580d16fa0a3ebae28757.jpg",
-    "static/media/test_image_vertical_long.png": "/static/media/test_image_vertical_long.8db3fe326e4b85ab75f9.png",
     "static/media/mahiro.png": "/static/media/mahiro.3f16aefbe6a54e3750cf.png",
-    "static/media/test_image_vertical.png": "/static/media/test_image_vertical.1767f1a4231c2d4801f0.png",
-    "static/media/test_image_horizontal_long.png": "/static/media/test_image_horizontal_long.b007234b7fd8ce8ddee5.png",
-    "static/media/test_image_horizontal.png": "/static/media/test_image_horizontal.deb913cee32229756fa9.png",
     "index.html": "/index.html",
-    "main.2fb7666f.css.map": "/static/css/main.2fb7666f.css.map",
-    "main.c2677738.js.map": "/static/js/main.c2677738.js.map",
+    "main.a2442816.css.map": "/static/css/main.a2442816.css.map",
+    "main.b37566c2.js.map": "/static/js/main.b37566c2.js.map",
     "787.7cf6c855.chunk.js.map": "/static/js/787.7cf6c855.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2fb7666f.css",
-    "static/js/main.c2677738.js"
+    "static/css/main.a2442816.css",
+    "static/js/main.b37566c2.js"
   ]
 }
